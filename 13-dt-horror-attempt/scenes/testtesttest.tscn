@@ -26,6 +26,7 @@ sky_material = SubResource("ProceduralSkyMaterial_lq38n")
 [sub_resource type="Environment" id="Environment_ywv5p"]
 background_energy_multiplier = 0.0
 sky = SubResource("Sky_1nlxc")
+volumetric_fog_density = 0.008
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ao587"]
 resource_name = "atlas_kitchen"
@@ -8416,6 +8417,7 @@ shape = SubResource("ConcavePolygonShape3D_adxeb")
 
 [node name="lightbulb" type="MeshInstance3D" parent="DoriHome" unique_id=973410261]
 transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, -0.7, 3, -0.10000001)
+visible = false
 mesh = SubResource("ArrayMesh_qh3k2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/lightbulb" unique_id=1486830864]
@@ -8425,6 +8427,7 @@ shape = SubResource("ConcavePolygonShape3D_est7a")
 
 [node name="lightbulb_001" type="MeshInstance3D" parent="DoriHome" unique_id=1092881506]
 transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, 0.5000002, 3, -14)
+visible = false
 mesh = SubResource("ArrayMesh_ywg7f")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/lightbulb_001" unique_id=989068268]
@@ -8434,6 +8437,7 @@ shape = SubResource("ConcavePolygonShape3D_5t7vf")
 
 [node name="bulb2" type="MeshInstance3D" parent="DoriHome" unique_id=830237388]
 transform = Transform3D(30.000002, 0, 0, 0, -3.576279e-06, 30, 0, -30, -3.576279e-06, -7, 3, -15)
+visible = false
 mesh = SubResource("ArrayMesh_f3h0q")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/bulb2" unique_id=1172730519]
