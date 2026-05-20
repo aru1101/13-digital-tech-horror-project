@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://lh8hwo0wjpm6"]
+
+[ext_resource type="PackedScene" uid="uid://cdnuvtmhgm5f2" path="res://assets/models/Abandoned_House/Models/Abandoned_House.glb" id="1_bl13t"]
+[ext_resource type="PackedScene" uid="uid://c8qyfehb82f6f" path="res://scenes/player.tscn" id="2_iyx0m"]
+
+[node name="Node3D" type="Node3D" unique_id=169137399]
+
+[node name="Abandoned_House" parent="." unique_id=1354696067 instance=ExtResource("1_bl13t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13934684, 0, 18.357506)
+
+[node name="CharacterBody3D" parent="." unique_id=1655996281 instance=ExtResource("2_iyx0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.535894, 0, -98.12078)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1388179900]
