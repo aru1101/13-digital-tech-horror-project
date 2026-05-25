@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cq47wulgw6r3d"
+path="res://.godot/imported/FEETHmn-HARDWOOD FLOOR_Footsteps With Tennis Shoes On Hardwood Floor 15_AUDIOELK_NONE.wav-3cd200cd70bed6debfa46f56d35e6b3b.sample"
+
+[deps]
+
+source_file="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-HARDWOOD FLOOR_Footsteps With Tennis Shoes On Hardwood Floor 15_AUDIOELK_NONE.wav"
+dest_files=["res://.godot/imported/FEETHmn-HARDWOOD FLOOR_Footsteps With Tennis Shoes On Hardwood Floor 15_AUDIOELK_NONE.wav-3cd200cd70bed6debfa46f56d35e6b3b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

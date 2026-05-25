@@ -1,26 +1,55 @@
 [gd_scene format=3 uid="uid://c8qyfehb82f6f"]
 
 [ext_resource type="Script" uid="uid://dcgtmrax1psa6" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="AudioStream" uid="uid://dadooaccnwkbu" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 05_AUDIOELK_NONE.wav" id="2_tuyoq"]
+[ext_resource type="AudioStream" uid="uid://d0sjghok7nwtg" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 06_AUDIOELK_NONE.wav" id="3_fjrip"]
+[ext_resource type="AudioStream" uid="uid://bdkw2our46235" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 09_AUDIOELK_NONE.wav" id="4_smehm"]
+[ext_resource type="AudioStream" uid="uid://duscs2s05slls" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 12_AUDIOELK_NONE.wav" id="5_ur7pv"]
+[ext_resource type="AudioStream" uid="uid://dobbeuhd3tvyi" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 15_AUDIOELK_NONE.wav" id="6_y4r1p"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u8vuu"]
-radius = 0.5541992
+radius = 0.18310547
+height = 1.4974365
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_3vyb7"]
 
-[node name="CharacterBody3D" type="CharacterBody3D" unique_id=1655996281]
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_3vyb7"]
+random_pitch = 1.0717734
+streams_count = 5
+stream_0/stream = ExtResource("2_tuyoq")
+stream_1/stream = ExtResource("3_fjrip")
+stream_2/stream = ExtResource("4_smehm")
+stream_3/stream = ExtResource("5_ur7pv")
+stream_4/stream = ExtResource("6_y4r1p")
+
+[node name="playerAdult" type="CharacterBody3D" unique_id=1655996281]
 script = ExtResource("1_3vyb7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=823130281]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.037109375, 0)
 shape = SubResource("CapsuleShape3D_u8vuu")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1045768320]
+transform = Transform3D(0.63912857, 0, 0, 0, 1, 0, 0, 0, 0.5547936, 0, 0, 0)
 visible = false
 mesh = SubResource("CapsuleMesh_3vyb7")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1474960970]
+[node name="head" type="Node3D" parent="." unique_id=1008288776]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65841305, 0)
+
+[node name="Camera3D" type="Camera3D" parent="head" unique_id=1474960970]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.9983748, 0.056989037, 0, -0.056989037, 0.9983748, 0, 0.3779359, -0.038609505)
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Camera3D" unique_id=1333003423]
+[node name="SpotLight3D" type="SpotLight3D" parent="head/Camera3D" unique_id=1333003423]
 shadow_enabled = true
 spot_range = 6.0
 spot_angle = 35.0
+
+[node name="FootstepAudio3D" type="AudioStreamPlayer3D" parent="." unique_id=1983410716]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8636656, 0)
+stream = SubResource("AudioStreamRandomizer_3vyb7")
+volume_db = 0.784
+pitch_scale = 0.66

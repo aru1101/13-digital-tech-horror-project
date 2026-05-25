@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://contp3kik1bev"
+path="res://.godot/imported/FEETHmn-LOOSE WOOD_Footsteps With Tennis Shoes On Shifting Loose Wood 03_AUDIOELK_NONE.wav-592e412ab062f5e5d9cf7941897473cc.sample"
+
+[deps]
+
+source_file="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-LOOSE WOOD_Footsteps With Tennis Shoes On Shifting Loose Wood 03_AUDIOELK_NONE.wav"
+dest_files=["res://.godot/imported/FEETHmn-LOOSE WOOD_Footsteps With Tennis Shoes On Shifting Loose Wood 03_AUDIOELK_NONE.wav-592e412ab062f5e5d9cf7941897473cc.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

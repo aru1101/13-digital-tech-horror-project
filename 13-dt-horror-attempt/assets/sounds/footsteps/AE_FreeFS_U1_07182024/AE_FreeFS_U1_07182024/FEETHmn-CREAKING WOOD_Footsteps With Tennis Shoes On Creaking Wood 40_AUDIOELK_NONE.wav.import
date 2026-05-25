@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cs65o5rokbxc"
+path="res://.godot/imported/FEETHmn-CREAKING WOOD_Footsteps With Tennis Shoes On Creaking Wood 40_AUDIOELK_NONE.wav-2b3c63363d7d4265235f4b650fd542b7.sample"
+
+[deps]
+
+source_file="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-CREAKING WOOD_Footsteps With Tennis Shoes On Creaking Wood 40_AUDIOELK_NONE.wav"
+dest_files=["res://.godot/imported/FEETHmn-CREAKING WOOD_Footsteps With Tennis Shoes On Creaking Wood 40_AUDIOELK_NONE.wav-2b3c63363d7d4265235f4b650fd542b7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

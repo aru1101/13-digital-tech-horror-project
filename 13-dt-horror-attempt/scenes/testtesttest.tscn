@@ -1,8 +1,7 @@
 [gd_scene format=4 uid="uid://d3kajko7k5vsk"]
 
-[ext_resource type="Script" uid="uid://c2dy37yxci2u4" path="res://scenes/testtesttest.gd" id="1_lq38n"]
+[ext_resource type="Script" uid="uid://c2dy37yxci2u4" path="res://scripts/testtesttest.gd" id="1_lq38n"]
 [ext_resource type="Texture2D" uid="uid://bu7iwlhioptcp" path="res://assets/models/DoriHome_0.png" id="1_m6ngl"]
-[ext_resource type="PackedScene" uid="uid://c8qyfehb82f6f" path="res://scenes/player.tscn" id="2_kg230"]
 [ext_resource type="Texture2D" uid="uid://bybw3xv4bbq6f" path="res://assets/models/DoriHome_1.png" id="2_lq38n"]
 [ext_resource type="Texture2D" uid="uid://yw0wlr544ovd" path="res://assets/models/DoriHome_2.png" id="3_1nlxc"]
 [ext_resource type="Texture2D" uid="uid://dpes7ubuoo7xh" path="res://assets/models/DoriHome_3.png" id="4_ywv5p"]
@@ -17,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://wwrccv8ri447" path="res://assets/models/DoriHome_12.png" id="13_qhegt"]
 [ext_resource type="Texture2D" uid="uid://dtntybc32agic" path="res://assets/models/DoriHome_13.png" id="14_co2bb"]
 [ext_resource type="Texture2D" uid="uid://db0n3dw8wsve4" path="res://assets/models/DoriHome_14.png" id="15_iuqao"]
+[ext_resource type="PackedScene" uid="uid://b70u8cuouyaid" path="res://scenes/player_child.tscn" id="17_lq38n"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lq38n"]
 
@@ -7818,6 +7818,7 @@ shape = SubResource("ConcavePolygonShape3D_eqrhc")
 
 [node name="Cube_033" type="MeshInstance3D" parent="DoriHome" unique_id=1324905730]
 transform = Transform3D(90, 0, 0, 0, -1.0728836e-05, 89.99999, 0, -89.99999, -1.0728836e-05, -6.9, 0.4, -8.6)
+visible = false
 mesh = SubResource("ArrayMesh_atr1v")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_033" unique_id=1261665809]
@@ -8481,5 +8482,5 @@ mesh = SubResource("ArrayMesh_p8w5x")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/floor/StaticBody3D" unique_id=1017845520]
 shape = SubResource("ConcavePolygonShape3D_emkjg")
 
-[node name="CharacterBody3D" parent="." unique_id=1655996281 instance=ExtResource("2_kg230")]
-transform = Transform3D(0.52481484, 0, 0, 0, 1, 0, 0, 0, 0.57832396, -9.0665245, 1.3660421, -5.557073)
+[node name="playerChild" parent="." unique_id=1655996281 instance=ExtResource("17_lq38n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.213028, 1.454814, -5.6251435)

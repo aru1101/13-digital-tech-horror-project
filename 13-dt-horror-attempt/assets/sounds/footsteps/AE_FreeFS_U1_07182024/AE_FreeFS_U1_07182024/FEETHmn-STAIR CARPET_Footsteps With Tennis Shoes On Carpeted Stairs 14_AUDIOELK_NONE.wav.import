@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://eb4urrb541ka"
+path="res://.godot/imported/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 14_AUDIOELK_NONE.wav-65d36b764910c3ad6f6d3cea71566478.sample"
+
+[deps]
+
+source_file="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 14_AUDIOELK_NONE.wav"
+dest_files=["res://.godot/imported/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 14_AUDIOELK_NONE.wav-65d36b764910c3ad6f6d3cea71566478.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
