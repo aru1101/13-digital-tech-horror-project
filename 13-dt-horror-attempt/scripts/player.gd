@@ -1,11 +1,14 @@
 extends CharacterBody3D
 
+class_name player
 
 const SPEED = 2.5
 const JUMP_VELOCITY = 4.5
 
 var mouse_sensitivity = 0.002
 
+@onready var interaction_ray = $head/Camera3D/InteractionRay
+@onready var interaction_label = $CanvasLayer/label
 @export_group("headbob")
 @export var headbob_frequency := 2.9
 @export var headbob_ampltiude := 0.08
@@ -20,6 +23,16 @@ func _input(event):
 		rotate_y(-event.relative.x * mouse_sensitivity)
 		$head/Camera3D.rotate_x(-event.relative.y * mouse_sensitivity)
 		$head/Camera3D.rotation.x = clampf($head/Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
+	#if event.is_action_pressed("interact"):
+	if interaction_ray.is_colliding():
+		var hit_collider = interaction_ray.get_collider()
+		var object_root = hit_collider.get_parent()
+		if object_root.has_method("interact") and event.is_action_pressed("interact"):
+			object_root.interact()
+		if interaction_ray.is_colliding() and object_root.has_method("interact"):
+			interaction_label.show()
+		elif interaction_ray.is_colliding() or ! interaction_ray.is_colliding() and ! object_root.has_method("interact"):
+			interaction_label.hide()
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

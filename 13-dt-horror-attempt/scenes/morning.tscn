@@ -1,37 +1,31 @@
-[gd_scene format=4 uid="uid://d3kajko7k5vsk"]
+[gd_scene format=4 uid="uid://cxwok2seb3yiv"]
 
-[ext_resource type="Script" uid="uid://c2dy37yxci2u4" path="res://scripts/testtesttest.gd" id="1_lq38n"]
-[ext_resource type="Texture2D" uid="uid://bu7iwlhioptcp" path="res://assets/models/DoriHome_0.png" id="1_m6ngl"]
-[ext_resource type="Texture2D" uid="uid://bybw3xv4bbq6f" path="res://assets/models/DoriHome_1.png" id="2_lq38n"]
-[ext_resource type="Texture2D" uid="uid://yw0wlr544ovd" path="res://assets/models/DoriHome_2.png" id="3_1nlxc"]
-[ext_resource type="Texture2D" uid="uid://dpes7ubuoo7xh" path="res://assets/models/DoriHome_3.png" id="4_ywv5p"]
-[ext_resource type="Texture2D" uid="uid://c6s83knv15w2k" path="res://assets/models/DoriHome_4.png" id="5_wc6a6"]
-[ext_resource type="Texture2D" uid="uid://b63adeyvfmt07" path="res://assets/models/DoriHome_8.png" id="6_a2ssi"]
-[ext_resource type="Texture2D" uid="uid://c3hoardtl0ed2" path="res://assets/models/DoriHome_5.png" id="7_gcrbl"]
-[ext_resource type="Texture2D" uid="uid://bmqqjgn2g2trx" path="res://assets/models/DoriHome_6.png" id="8_yqmy1"]
-[ext_resource type="Texture2D" uid="uid://bs78vervee8ti" path="res://assets/models/DoriHome_7.png" id="9_35kyt"]
-[ext_resource type="Texture2D" uid="uid://bs1sclk2vh657" path="res://assets/models/DoriHome_9.png" id="10_c2rvl"]
-[ext_resource type="Texture2D" uid="uid://bln0rq7h4uwn2" path="res://assets/models/DoriHome_10.png" id="11_yucx5"]
-[ext_resource type="Texture2D" uid="uid://dh1lwi83ulh22" path="res://assets/models/DoriHome_11.png" id="12_dujcf"]
-[ext_resource type="Texture2D" uid="uid://wwrccv8ri447" path="res://assets/models/DoriHome_12.png" id="13_qhegt"]
-[ext_resource type="Texture2D" uid="uid://dtntybc32agic" path="res://assets/models/DoriHome_13.png" id="14_co2bb"]
-[ext_resource type="Texture2D" uid="uid://db0n3dw8wsve4" path="res://assets/models/DoriHome_14.png" id="15_iuqao"]
-[ext_resource type="PackedScene" uid="uid://b70u8cuouyaid" path="res://scenes/player_child.tscn" id="17_lq38n"]
+[ext_resource type="Script" uid="uid://c2dy37yxci2u4" path="res://scripts/testtesttest.gd" id="1_tk7fm"]
+[ext_resource type="PackedScene" uid="uid://c8qyfehb82f6f" path="res://scenes/player.tscn" id="2_exavd"]
+[ext_resource type="Texture2D" uid="uid://bu7iwlhioptcp" path="res://assets/models/DoriHome_0.png" id="2_iwbsj"]
+[ext_resource type="Texture2D" uid="uid://bybw3xv4bbq6f" path="res://assets/models/DoriHome_1.png" id="3_8e10d"]
+[ext_resource type="Texture2D" uid="uid://yw0wlr544ovd" path="res://assets/models/DoriHome_2.png" id="4_3s7lb"]
+[ext_resource type="Texture2D" uid="uid://dpes7ubuoo7xh" path="res://assets/models/DoriHome_3.png" id="5_43dow"]
+[ext_resource type="Texture2D" uid="uid://c6s83knv15w2k" path="res://assets/models/DoriHome_4.png" id="6_4mnhb"]
+[ext_resource type="Texture2D" uid="uid://b63adeyvfmt07" path="res://assets/models/DoriHome_8.png" id="7_f4te5"]
+[ext_resource type="Texture2D" uid="uid://c3hoardtl0ed2" path="res://assets/models/DoriHome_5.png" id="8_0hdeg"]
+[ext_resource type="Texture2D" uid="uid://bmqqjgn2g2trx" path="res://assets/models/DoriHome_6.png" id="9_r3nna"]
+[ext_resource type="Texture2D" uid="uid://bs78vervee8ti" path="res://assets/models/DoriHome_7.png" id="10_f6de5"]
+[ext_resource type="Texture2D" uid="uid://bs1sclk2vh657" path="res://assets/models/DoriHome_9.png" id="11_24o5c"]
+[ext_resource type="Texture2D" uid="uid://bln0rq7h4uwn2" path="res://assets/models/DoriHome_10.png" id="12_6nvv3"]
+[ext_resource type="Script" uid="uid://ca2fb7yobej83" path="res://scripts/bed.gd" id="12_iwbsj"]
+[ext_resource type="Texture2D" uid="uid://dh1lwi83ulh22" path="res://assets/models/DoriHome_11.png" id="13_d51h7"]
+[ext_resource type="Texture2D" uid="uid://wwrccv8ri447" path="res://assets/models/DoriHome_12.png" id="14_6aq0q"]
+[ext_resource type="Texture2D" uid="uid://dtntybc32agic" path="res://assets/models/DoriHome_13.png" id="15_4jqag"]
+[ext_resource type="Texture2D" uid="uid://db0n3dw8wsve4" path="res://assets/models/DoriHome_14.png" id="16_ruxnq"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lq38n"]
-
-[sub_resource type="Sky" id="Sky_1nlxc"]
-sky_material = SubResource("ProceduralSkyMaterial_lq38n")
-
-[sub_resource type="Environment" id="Environment_ywv5p"]
-background_energy_multiplier = 0.0
-sky = SubResource("Sky_1nlxc")
-volumetric_fog_density = 0.008
+[sub_resource type="Environment" id="Environment_11jua"]
+background_energy_multiplier = 7.9
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ao587"]
 resource_name = "atlas_kitchen"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_m6ngl")
+albedo_texture = ExtResource("2_iwbsj")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -1768,7 +1762,7 @@ data = PackedVector3Array(0, -0.0019999999, 0, 0.0009999999, -0.0016999999, 0, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4kbnm"]
 resource_name = "atlas_bath"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("2_lq38n")
+albedo_texture = ExtResource("3_8e10d")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -1887,7 +1881,7 @@ data = PackedVector3Array(0.0033, 0.0026999998, 0, 0.0023, 0.0026999998, 0, 0.00
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7wce1"]
 resource_name = "atlas_mueblesDormitorio1"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("3_1nlxc")
+albedo_texture = ExtResource("4_3s7lb")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -1932,7 +1926,7 @@ data = PackedVector3Array(0.0009999999, 0.0001, 0.0273, 0.0009999999, 0.0001, 0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8by8d"]
 resource_name = "atlas_puertas"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("4_ywv5p")
+albedo_texture = ExtResource("5_43dow")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -2009,7 +2003,7 @@ data = PackedVector3Array(0.0050999997, -0.0002, 0.02, 0.0050999997, -0.0002, 0.
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sn0kg"]
 resource_name = "wood2"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("5_wc6a6")
+albedo_texture = ExtResource("6_4mnhb")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -2051,7 +2045,7 @@ shadow_mesh = SubResource("ArrayMesh_xe5r2")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rjwfk"]
 resource_name = "fabric"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("6_a2ssi")
+albedo_texture = ExtResource("7_f4te5")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -2294,7 +2288,7 @@ data = PackedVector3Array(0.0134, 0.0081, 0.009, 0.0134, 0.0081, 0.0093, 0.00909
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rs8sb"]
 resource_name = "fabricsofa"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("7_gcrbl")
+albedo_texture = ExtResource("8_0hdeg")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -2302,7 +2296,7 @@ emission_energy_multiplier = 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cnh55"]
 resource_name = "wood3"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("8_yqmy1")
+albedo_texture = ExtResource("9_r3nna")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -2311,7 +2305,7 @@ emission_energy_multiplier = 0.0
 resource_name = "atlas_living"
 transparency = 4
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("9_35kyt")
+albedo_texture = ExtResource("10_f6de5")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -3774,7 +3768,7 @@ data = PackedVector3Array(0.0007, 0.0007, 0.0289, 0, 0, 0.0289, 0, 0.0009999999,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_chgwa"]
 resource_name = "atlas_dormitorioelectro"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("10_c2rvl")
+albedo_texture = ExtResource("11_24o5c")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -4256,7 +4250,7 @@ shadow_mesh = SubResource("ArrayMesh_w1lwk")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u6vy1"]
 resource_name = "wood"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("11_yucx5")
+albedo_texture = ExtResource("12_6nvv3")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -5734,7 +5728,7 @@ data = PackedVector3Array(-0.0002, 0.0002, 0.021499999, -0.0002, -0.0002, 0.0214
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1dybs"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("12_dujcf")
+albedo_texture = ExtResource("13_d51h7")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -6101,7 +6095,7 @@ data = PackedVector3Array(0, 0.0019999999, 0, -0.0037999998, 0.0025, 0, 0, -0.00
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dja6a"]
 resource_name = "whitebricks"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("13_qhegt")
+albedo_texture = ExtResource("14_6aq0q")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -7020,7 +7014,7 @@ data = PackedVector3Array(0.042999998, 0.168, 0.03, -0.113, 0.168, 0.03, -0.113,
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sj7sq"]
 resource_name = "concreto2"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("14_co2bb")
+albedo_texture = ExtResource("15_4jqag")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -7065,7 +7059,7 @@ data = PackedVector3Array(-0.029, 0.03, 0, -0.029, 0.03, 0.02, -0.029, 0.0499999
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3gid2"]
 resource_name = "woodfloor"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("15_iuqao")
+albedo_texture = ExtResource("16_ruxnq")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -7105,1382 +7099,1395 @@ shadow_mesh = SubResource("ArrayMesh_eyat8")
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_emkjg"]
 data = PackedVector3Array(0.0404, 0.16499999, 0, 0.0404, -0.03, 0, -0.1104, -0.03, 0, -0.1104, -0.03, 0, -0.1104, 0.16499999, 0, 0.0404, 0.16499999, 0)
 
-[node name="Node3D" type="Node3D" unique_id=1927058289]
-script = ExtResource("1_lq38n")
+[node name="Node3D" type="Node3D" unique_id=1719314191]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2120635231]
-environment = SubResource("Environment_ywv5p")
+[node name="Node3D" type="Node3D" parent="." unique_id=1927058289]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7320533, 3.058031, 5.831211)
+script = ExtResource("1_tk7fm")
 
-[node name="DoriHome" type="Node3D" parent="." unique_id=652787229]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D" unique_id=2120635231]
+environment = SubResource("Environment_11jua")
+
+[node name="DoriHome" type="Node3D" parent="Node3D" unique_id=652787229]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15583456, 0, -1.4096508)
 
-[node name="cabinet_001" type="MeshInstance3D" parent="DoriHome" unique_id=2001112865]
+[node name="cabinet_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=2001112865]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -8.65, 0, -16.06)
 mesh = SubResource("ArrayMesh_a3jk5")
 
-[node name="Cube_037" type="MeshInstance3D" parent="DoriHome/cabinet_001" unique_id=749656939]
+[node name="Cube_037" type="MeshInstance3D" parent="Node3D/DoriHome/cabinet_001" unique_id=749656939]
 mesh = SubResource("ArrayMesh_hix61")
 
-[node name="Cube_038" type="MeshInstance3D" parent="DoriHome/cabinet_001" unique_id=298540475]
+[node name="Cube_038" type="MeshInstance3D" parent="Node3D/DoriHome/cabinet_001" unique_id=298540475]
 mesh = SubResource("ArrayMesh_xwcf6")
 
-[node name="Cube_039" type="MeshInstance3D" parent="DoriHome/cabinet_001" unique_id=1065776774]
+[node name="Cube_039" type="MeshInstance3D" parent="Node3D/DoriHome/cabinet_001" unique_id=1065776774]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004535999, -0.0038800049, 0.0010002882)
 mesh = SubResource("ArrayMesh_h6fx2")
 
-[node name="Cube_040" type="MeshInstance3D" parent="DoriHome/cabinet_001" unique_id=1218263722]
+[node name="Cube_040" type="MeshInstance3D" parent="Node3D/DoriHome/cabinet_001" unique_id=1218263722]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004535999, -0.0038800049, 0.0010002882)
 mesh = SubResource("ArrayMesh_ovtrf")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/cabinet_001" unique_id=382813622]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/cabinet_001" unique_id=382813622]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/cabinet_001/StaticBody3D" unique_id=861762840]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/cabinet_001/StaticBody3D" unique_id=861762840]
 shape = SubResource("ConcavePolygonShape3D_m6ngl")
 
-[node name="fridge" type="MeshInstance3D" parent="DoriHome" unique_id=1474979242]
+[node name="fridge" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1474979242]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -6.844, 0, -16.06)
 mesh = SubResource("ArrayMesh_4ep3q")
 
-[node name="Cube_042" type="MeshInstance3D" parent="DoriHome/fridge" unique_id=1750537483]
+[node name="Cube_042" type="MeshInstance3D" parent="Node3D/DoriHome/fridge" unique_id=1750537483]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004200001, -0.003999996, 0.013200001)
 mesh = SubResource("ArrayMesh_e1eo4")
 
-[node name="Cube_043" type="MeshInstance3D" parent="DoriHome/fridge" unique_id=990560564]
+[node name="Cube_043" type="MeshInstance3D" parent="Node3D/DoriHome/fridge" unique_id=990560564]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004200001, -0.003999996, 0)
 mesh = SubResource("ArrayMesh_2fbcx")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/fridge" unique_id=9037847]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/fridge" unique_id=9037847]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/fridge/StaticBody3D" unique_id=983581670]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/fridge/StaticBody3D" unique_id=983581670]
 shape = SubResource("ConcavePolygonShape3D_lq38n")
 
-[node name="hcabinet_001" type="MeshInstance3D" parent="DoriHome" unique_id=1469483266]
+[node name="hcabinet_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1469483266]
 transform = Transform3D(100, 0, 0, 0, -1.38282785e-05, 99.99999, 0, -116, -1.1920929e-05, -8.65, 0, -16.06)
 mesh = SubResource("ArrayMesh_qhs4a")
 
-[node name="hcabinet_005" type="MeshInstance3D" parent="DoriHome/hcabinet_001" unique_id=1497184734]
+[node name="hcabinet_005" type="MeshInstance3D" parent="Node3D/DoriHome/hcabinet_001" unique_id=1497184734]
 mesh = SubResource("ArrayMesh_c8eng")
 
-[node name="Cube_046" type="MeshInstance3D" parent="DoriHome/hcabinet_001" unique_id=1669792275]
+[node name="Cube_046" type="MeshInstance3D" parent="Node3D/DoriHome/hcabinet_001" unique_id=1669792275]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0045000077, -0.003344822, 0.021103539)
 mesh = SubResource("ArrayMesh_n1ebb")
 
-[node name="Cube_047" type="MeshInstance3D" parent="DoriHome/hcabinet_001" unique_id=2111243630]
+[node name="Cube_047" type="MeshInstance3D" parent="Node3D/DoriHome/hcabinet_001" unique_id=2111243630]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0044999886, -0.003344822, 0.021103539)
 mesh = SubResource("ArrayMesh_raspy")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/hcabinet_001" unique_id=755550950]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/hcabinet_001" unique_id=755550950]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/hcabinet_001/StaticBody3D" unique_id=1248286831]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/hcabinet_001/StaticBody3D" unique_id=1248286831]
 shape = SubResource("ConcavePolygonShape3D_1nlxc")
 
-[node name="hcabinet_003" type="MeshInstance3D" parent="DoriHome" unique_id=123939031]
+[node name="hcabinet_003" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=123939031]
 transform = Transform3D(100, 0, 0, 0, -1.38282785e-05, 99.99999, 0, -116, -1.1920929e-05, -5.0499997, 0, -16.06)
 mesh = SubResource("ArrayMesh_m3s0e")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/hcabinet_003" unique_id=1197614150]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/hcabinet_003" unique_id=1197614150]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/hcabinet_003/StaticBody3D" unique_id=719091078]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/hcabinet_003/StaticBody3D" unique_id=719091078]
 shape = SubResource("ConcavePolygonShape3D_ywv5p")
 
-[node name="ovencabinet" type="MeshInstance3D" parent="DoriHome" unique_id=1176411693]
+[node name="ovencabinet" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1176411693]
 transform = Transform3D(100, 0, 0, 0, -1.38282785e-05, 99.99999, 0, -116, -1.1920929e-05, -9.549999, 0, -16.06)
 mesh = SubResource("ArrayMesh_mmra3")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/ovencabinet" unique_id=1475107792]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/ovencabinet" unique_id=1475107792]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/ovencabinet/StaticBody3D" unique_id=375859587]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/ovencabinet/StaticBody3D" unique_id=375859587]
 shape = SubResource("ConcavePolygonShape3D_wc6a6")
 
-[node name="cabinet_003" type="MeshInstance3D" parent="DoriHome" unique_id=490134072]
+[node name="cabinet_003" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=490134072]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -5.0419993, 0, -16.06)
 mesh = SubResource("ArrayMesh_ugshr")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/cabinet_003" unique_id=960019223]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/cabinet_003" unique_id=960019223]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/cabinet_003/StaticBody3D" unique_id=576286237]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/cabinet_003/StaticBody3D" unique_id=576286237]
 shape = SubResource("ConcavePolygonShape3D_a2ssi")
 
-[node name="sinkcabinet" type="MeshInstance3D" parent="DoriHome" unique_id=1522757196]
+[node name="sinkcabinet" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1522757196]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -7.742, 0, -16.06)
 mesh = SubResource("ArrayMesh_5te68")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/sinkcabinet" unique_id=492899179]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/sinkcabinet" unique_id=492899179]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/sinkcabinet/StaticBody3D" unique_id=619082758]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/sinkcabinet/StaticBody3D" unique_id=619082758]
 shape = SubResource("ConcavePolygonShape3D_gcrbl")
 
-[node name="oven" type="MeshInstance3D" parent="DoriHome" unique_id=1685694175]
+[node name="oven" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1685694175]
 transform = Transform3D(50, 0, 0, 0, -5.9604645e-06, 49.999996, 0, -49.999996, -5.9604645e-06, -9.53, 0, -16.06)
 mesh = SubResource("ArrayMesh_osvww")
 
-[node name="Cube_035" type="MeshInstance3D" parent="DoriHome/oven" unique_id=861994268]
+[node name="Cube_035" type="MeshInstance3D" parent="Node3D/DoriHome/oven" unique_id=861994268]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0073999977, 0.0052592005)
 mesh = SubResource("ArrayMesh_02eyo")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/oven" unique_id=131338982]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/oven" unique_id=131338982]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/oven/StaticBody3D" unique_id=1830341107]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/oven/StaticBody3D" unique_id=1830341107]
 shape = SubResource("ConcavePolygonShape3D_yqmy1")
 
-[node name="hcabinet_004" type="MeshInstance3D" parent="DoriHome" unique_id=634711796]
+[node name="hcabinet_004" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=634711796]
 transform = Transform3D(100, 0, 0, 0, -1.38282785e-05, 99.99999, 0, -116, -1.1920929e-05, -7.7499995, 0, -16.06)
 mesh = SubResource("ArrayMesh_m4srs")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/hcabinet_004" unique_id=95584342]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/hcabinet_004" unique_id=95584342]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/hcabinet_004/StaticBody3D" unique_id=672030296]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/hcabinet_004/StaticBody3D" unique_id=672030296]
 shape = SubResource("ConcavePolygonShape3D_35kyt")
 
-[node name="cabinet_002" type="MeshInstance3D" parent="DoriHome" unique_id=1015644360]
+[node name="cabinet_002" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1015644360]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -5.942, 0, -16.06)
 mesh = SubResource("ArrayMesh_dxuwk")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/cabinet_002" unique_id=675799230]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/cabinet_002" unique_id=675799230]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/cabinet_002/StaticBody3D" unique_id=843197261]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/cabinet_002/StaticBody3D" unique_id=843197261]
 shape = SubResource("ConcavePolygonShape3D_c2rvl")
 
-[node name="hcabinet_002" type="MeshInstance3D" parent="DoriHome" unique_id=1147857309]
+[node name="hcabinet_002" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1147857309]
 transform = Transform3D(100, 0, 0, 0, -1.38282785e-05, 99.99999, 0, -116, -1.1920929e-05, -5.95, 0, -16.06)
 mesh = SubResource("ArrayMesh_hcr6m")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/hcabinet_002" unique_id=2031302938]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/hcabinet_002" unique_id=2031302938]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/hcabinet_002/StaticBody3D" unique_id=1406154834]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/hcabinet_002/StaticBody3D" unique_id=1406154834]
 shape = SubResource("ConcavePolygonShape3D_yucx5")
 
-[node name="cabinet" type="MeshInstance3D" parent="DoriHome" unique_id=272046783]
+[node name="cabinet" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=272046783]
 transform = Transform3D(1.1920929e-05, -100, -1.4901161e-05, -2.9802322e-06, -1.1920929e-05, 99.99999, -100, -5.9604645e-06, 0, -10.556003, 0, -14.053998)
 mesh = SubResource("ArrayMesh_l5af4")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/cabinet" unique_id=2125830372]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/cabinet" unique_id=2125830372]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/cabinet/StaticBody3D" unique_id=607169365]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/cabinet/StaticBody3D" unique_id=607169365]
 shape = SubResource("ConcavePolygonShape3D_dujcf")
 
-[node name="hcabinet" type="MeshInstance3D" parent="DoriHome" unique_id=531341325]
+[node name="hcabinet" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=531341325]
 transform = Transform3D(5.9604645e-06, -116.00001, -2.9802322e-06, 2.9802322e-06, 0, 100, -100, -3.4570696e-06, 5.9604645e-06, -10.556003, 0, -14.965999)
 mesh = SubResource("ArrayMesh_nuakp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/hcabinet" unique_id=1464760872]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/hcabinet" unique_id=1464760872]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/hcabinet/StaticBody3D" unique_id=2017083936]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/hcabinet/StaticBody3D" unique_id=2017083936]
 shape = SubResource("ConcavePolygonShape3D_qhegt")
 
-[node name="cabinet_004" type="MeshInstance3D" parent="DoriHome" unique_id=508825009]
+[node name="cabinet_004" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=508825009]
 transform = Transform3D(0, 100, 2.9802322e-06, 2.9802322e-06, 0, 100, 100, 2.9802322e-06, 0, -10.486001, 0, -15.855999)
 mesh = SubResource("ArrayMesh_7bg7q")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/cabinet_004" unique_id=885765143]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/cabinet_004" unique_id=885765143]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/cabinet_004/StaticBody3D" unique_id=36242514]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/cabinet_004/StaticBody3D" unique_id=36242514]
 shape = SubResource("ConcavePolygonShape3D_co2bb")
 
-[node name="hcabinet_006" type="MeshInstance3D" parent="DoriHome" unique_id=1878125367]
+[node name="hcabinet_006" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1878125367]
 transform = Transform3D(5.9604645e-06, 116.00001, -8.940697e-06, 0, 6.9141392e-06, 100, 100, -1.0371209e-05, 0, -10.486001, 0, -15.863999)
 mesh = SubResource("ArrayMesh_kwjtj")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/hcabinet_006" unique_id=88436992]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/hcabinet_006" unique_id=88436992]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/hcabinet_006/StaticBody3D" unique_id=1566659944]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/hcabinet_006/StaticBody3D" unique_id=1566659944]
 shape = SubResource("ConcavePolygonShape3D_iuqao")
 
-[node name="hcabinet_007" type="MeshInstance3D" parent="DoriHome" unique_id=129744244]
+[node name="hcabinet_007" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=129744244]
 transform = Transform3D(5.9604645e-06, -116.00001, -2.9802322e-06, 2.9802322e-06, 0, 100, -100, -3.4570696e-06, 5.9604645e-06, -10.55, 0, -14.06)
 mesh = SubResource("ArrayMesh_x683r")
 
-[node name="hcabinet_008" type="MeshInstance3D" parent="DoriHome/hcabinet_007" unique_id=1121397665]
+[node name="hcabinet_008" type="MeshInstance3D" parent="Node3D/DoriHome/hcabinet_007" unique_id=1121397665]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.536743e-09, 0, 0)
 mesh = SubResource("ArrayMesh_mkft1")
 
-[node name="Cube_034" type="MeshInstance3D" parent="DoriHome/hcabinet_007" unique_id=878469015]
+[node name="Cube_034" type="MeshInstance3D" parent="Node3D/DoriHome/hcabinet_007" unique_id=878469015]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004499998, -0.003344822, 0.021103539)
 mesh = SubResource("ArrayMesh_wql3b")
 
-[node name="Cube_036" type="MeshInstance3D" parent="DoriHome/hcabinet_007" unique_id=385703348]
+[node name="Cube_036" type="MeshInstance3D" parent="Node3D/DoriHome/hcabinet_007" unique_id=385703348]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004499998, -0.003344822, 0.021103539)
 mesh = SubResource("ArrayMesh_2c7mu")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/hcabinet_007" unique_id=2100297238]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/hcabinet_007" unique_id=2100297238]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/hcabinet_007/StaticBody3D" unique_id=1025284687]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/hcabinet_007/StaticBody3D" unique_id=1025284687]
 shape = SubResource("ConcavePolygonShape3D_8kkj2")
 
-[node name="cabinet_005" type="MeshInstance3D" parent="DoriHome" unique_id=859375964]
+[node name="cabinet_005" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=859375964]
 transform = Transform3D(1.1920929e-05, -100, -1.4901161e-05, -2.9802322e-06, -1.1920929e-05, 99.99999, -100, -5.9604645e-06, 0, -10.556003, 0, -14.953998)
 mesh = SubResource("ArrayMesh_s4u21")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/cabinet_005" unique_id=615226028]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/cabinet_005" unique_id=615226028]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/cabinet_005/StaticBody3D" unique_id=1274447826]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/cabinet_005/StaticBody3D" unique_id=1274447826]
 shape = SubResource("ConcavePolygonShape3D_i1f0c")
 
-[node name="hcabinet_009" type="MeshInstance3D" parent="DoriHome" unique_id=1760637951]
+[node name="hcabinet_009" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1760637951]
 transform = Transform3D(100, 0, 0, 0, -1.38282785e-05, 99.99999, 0, -116, -1.1920929e-05, -6.8500004, 0, -16.06)
 mesh = SubResource("ArrayMesh_op3pe")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/hcabinet_009" unique_id=260782080]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/hcabinet_009" unique_id=260782080]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/hcabinet_009/StaticBody3D" unique_id=1186086716]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/hcabinet_009/StaticBody3D" unique_id=1186086716]
 shape = SubResource("ConcavePolygonShape3D_lxy87")
 
-[node name="trashcontainer" type="MeshInstance3D" parent="DoriHome" unique_id=411445761]
+[node name="trashcontainer" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=411445761]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -4.27, 0, -16.08)
 mesh = SubResource("ArrayMesh_jy8va")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/trashcontainer" unique_id=1105040165]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/trashcontainer" unique_id=1105040165]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/trashcontainer/StaticBody3D" unique_id=1409178676]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/trashcontainer/StaticBody3D" unique_id=1409178676]
 shape = SubResource("ConcavePolygonShape3D_p5ey0")
 
-[node name="trash" type="MeshInstance3D" parent="DoriHome" unique_id=119657699]
+[node name="trash" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=119657699]
 transform = Transform3D(-56.381554, 20.521229, 0, 0, 0, 60.000004, 20.521229, 56.381554, 0, -3.6699996, 0, -16.08)
 mesh = SubResource("ArrayMesh_br12p")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/trash" unique_id=1688343900]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/trash" unique_id=1688343900]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/trash/StaticBody3D" unique_id=1137539416]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/trash/StaticBody3D" unique_id=1137539416]
 shape = SubResource("ConcavePolygonShape3D_08gta")
 
-[node name="microwave" type="MeshInstance3D" parent="DoriHome" unique_id=35910676]
+[node name="microwave" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=35910676]
 transform = Transform3D(39.999996, 0, 0, 0, -4.768371e-06, 39.999992, 0, -39.999992, -4.768371e-06, -5.83, 0.95, -16.2)
 mesh = SubResource("ArrayMesh_oxo80")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/microwave" unique_id=120409379]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/microwave" unique_id=120409379]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/microwave/StaticBody3D" unique_id=1121087729]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/microwave/StaticBody3D" unique_id=1121087729]
 shape = SubResource("ConcavePolygonShape3D_p4rxw")
 
-[node name="blender?XD" type="MeshInstance3D" parent="DoriHome" unique_id=417874829]
+[node name="blender?XD" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=417874829]
 transform = Transform3D(0, 50, 1.4901161e-06, 1.4901161e-06, 0, 50, 50, 1.4901161e-06, 0, -4.99, 0.95000005, -16.2)
 mesh = SubResource("ArrayMesh_78ffm")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/blender?XD" unique_id=1600123655]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/blender?XD" unique_id=1600123655]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/blender?XD/StaticBody3D" unique_id=563725969]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/blender?XD/StaticBody3D" unique_id=563725969]
 shape = SubResource("ConcavePolygonShape3D_40ys5")
 
-[node name="Cube_041" type="MeshInstance3D" parent="DoriHome" unique_id=1122020476]
+[node name="Cube_041" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1122020476]
 transform = Transform3D(-39.201992, -39.20201, 6.6089633e-06, 0, 6.6089633e-06, 55.440002, -39.20201, 39.201992, -6.6089633e-06, -5.79, 0.96, -13.8)
 mesh = SubResource("ArrayMesh_8aqjl")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_041" unique_id=1148711098]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_041" unique_id=1148711098]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_041/StaticBody3D" unique_id=1438744089]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_041/StaticBody3D" unique_id=1438744089]
 shape = SubResource("ConcavePolygonShape3D_xhhl3")
 
-[node name="kittable" type="MeshInstance3D" parent="DoriHome" unique_id=2058773153]
+[node name="kittable" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=2058773153]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -7.3, 0, -13.86)
 mesh = SubResource("ArrayMesh_avqjb")
 
-[node name="manta" type="MeshInstance3D" parent="DoriHome/kittable" unique_id=515487237]
+[node name="manta" type="MeshInstance3D" parent="Node3D/DoriHome/kittable" unique_id=515487237]
 mesh = SubResource("ArrayMesh_0fqhp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/kittable" unique_id=880426763]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/kittable" unique_id=880426763]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/kittable/StaticBody3D" unique_id=1498612741]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/kittable/StaticBody3D" unique_id=1498612741]
 shape = SubResource("ConcavePolygonShape3D_uqdpj")
 
-[node name="Cube_044" type="MeshInstance3D" parent="DoriHome" unique_id=1115683285]
+[node name="Cube_044" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1115683285]
 transform = Transform3D(-36.25231, 16.904734, -1.1920929e-06, -1.1920929e-06, 0, 40, 16.904734, 36.25231, 0, -6.7, 0.96, -13.9)
 mesh = SubResource("ArrayMesh_lfv25")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_044" unique_id=1741386904]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_044" unique_id=1741386904]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_044/StaticBody3D" unique_id=690671157]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_044/StaticBody3D" unique_id=690671157]
 shape = SubResource("ConcavePolygonShape3D_s5kgt")
 
-[node name="Plane_004" type="MeshInstance3D" parent="DoriHome" unique_id=361437925]
+[node name="Plane_004" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=361437925]
 transform = Transform3D(-115.9111, 31.058298, 0, 0, 0, 120.00001, 31.058298, 115.9111, 0, -7.2, 0.9779268, -13.9)
 mesh = SubResource("ArrayMesh_mx8x6")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Plane_004" unique_id=1554280094]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Plane_004" unique_id=1554280094]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Plane_004/StaticBody3D" unique_id=1941129076]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Plane_004/StaticBody3D" unique_id=1941129076]
 shape = SubResource("ConcavePolygonShape3D_he6ub")
 
-[node name="Plane_005" type="MeshInstance3D" parent="DoriHome" unique_id=684312732]
+[node name="Plane_005" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=684312732]
 transform = Transform3D(-23.75744, -1.2376006e-06, -28.313, 0, 36.96, -1.6155732e-06, 28.313, -1.0384707e-06, -23.75744, -7.6, 1, -13.6)
 mesh = SubResource("ArrayMesh_ft7mo")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Plane_005" unique_id=1130967717]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Plane_005" unique_id=1130967717]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Plane_005/StaticBody3D" unique_id=1547463763]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Plane_005/StaticBody3D" unique_id=1547463763]
 shape = SubResource("ConcavePolygonShape3D_f7jtj")
 
-[node name="Circle_006" type="MeshInstance3D" parent="DoriHome" unique_id=114900315]
+[node name="Circle_006" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=114900315]
 transform = Transform3D(0, -9, -2.682209e-07, -2.682209e-07, 0, 9, -9, 2.682209e-07, 0, -5.3, 0.95, -15.799999)
 mesh = SubResource("ArrayMesh_ymf4d")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle_006" unique_id=1599101814]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle_006" unique_id=1599101814]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle_006/StaticBody3D" unique_id=1271556745]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle_006/StaticBody3D" unique_id=1271556745]
 shape = SubResource("ConcavePolygonShape3D_4pnpn")
 
-[node name="Circle_007" type="MeshInstance3D" parent="DoriHome" unique_id=84445210]
+[node name="Circle_007" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=84445210]
 transform = Transform3D(37.5877, -13.680805, -2.3841856e-06, 0, -9.536742e-06, 39.999996, -13.680805, -37.587704, -4.768371e-06, -10.34, 0.9499999, -14.4)
 mesh = SubResource("ArrayMesh_7u3rl")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle_007" unique_id=333926398]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle_007" unique_id=333926398]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle_007/StaticBody3D" unique_id=1250028564]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle_007/StaticBody3D" unique_id=1250028564]
 shape = SubResource("ConcavePolygonShape3D_nc57c")
 
-[node name="Cube_045" type="MeshInstance3D" parent="DoriHome" unique_id=1782707831]
+[node name="Cube_045" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1782707831]
 transform = Transform3D(21.6, 0, 0, 0, -2.5749207e-06, 21.599998, 0, -21.599998, -2.5749207e-06, -4.8023453, 0.95, -15.861776)
 mesh = SubResource("ArrayMesh_xfq4t")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_045" unique_id=851714589]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_045" unique_id=851714589]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_045/StaticBody3D" unique_id=8904695]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_045/StaticBody3D" unique_id=8904695]
 shape = SubResource("ConcavePolygonShape3D_js4di")
 
-[node name="cereal" type="MeshInstance3D" parent="DoriHome" unique_id=263412859]
+[node name="cereal" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=263412859]
 transform = Transform3D(14.7916355, -31.720778, -2.0861626e-06, -2.0861626e-06, -8.34465e-06, 35.000004, -31.720778, -14.791639, -8.34465e-06, -10.5, 0.95, -15)
 mesh = SubResource("ArrayMesh_84s6e")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/cereal" unique_id=827262591]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/cereal" unique_id=827262591]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/cereal/StaticBody3D" unique_id=1620895107]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/cereal/StaticBody3D" unique_id=1620895107]
 shape = SubResource("ConcavePolygonShape3D_nm6d8")
 
-[node name="Cube_048" type="MeshInstance3D" parent="DoriHome" unique_id=816737987]
+[node name="Cube_048" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=816737987]
 transform = Transform3D(41.940586, 4.434311e-06, -29.367117, 0, -51.2, -7.730986e-06, -29.367117, 6.3328516e-06, -41.940586, -8.33, 0.9799999, -15.7)
 mesh = SubResource("ArrayMesh_81j1f")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_048" unique_id=314208781]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_048" unique_id=314208781]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_048/StaticBody3D" unique_id=1243958235]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_048/StaticBody3D" unique_id=1243958235]
 shape = SubResource("ConcavePolygonShape3D_vu44w")
 
-[node name="Circle_008" type="MeshInstance3D" parent="DoriHome" unique_id=1766038227]
+[node name="Circle_008" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1766038227]
 transform = Transform3D(38.19172, -22.049997, 0, 1.9714234e-06, 5.2571295e-06, 44.099995, -22.049997, -38.19172, 5.2571295e-06, -8.3, 0.97, -13.7)
 mesh = SubResource("ArrayMesh_iqj55")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle_008" unique_id=419562602]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle_008" unique_id=419562602]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle_008/StaticBody3D" unique_id=1256848819]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle_008/StaticBody3D" unique_id=1256848819]
 shape = SubResource("ConcavePolygonShape3D_sign0")
 
-[node name="Cube_049" type="MeshInstance3D" parent="DoriHome" unique_id=1429158844]
+[node name="Cube_049" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1429158844]
 transform = Transform3D(15.000001, -25.980764, 2.6822092e-06, 8.9406973e-07, 3.576279e-06, 30.000002, -25.980764, -15.000001, 3.576279e-06, -10.5, 0.95, -15.5)
 mesh = SubResource("ArrayMesh_xk7ph")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_049" unique_id=1096935996]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_049" unique_id=1096935996]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_049/StaticBody3D" unique_id=1196637621]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_049/StaticBody3D" unique_id=1196637621]
 shape = SubResource("ConcavePolygonShape3D_ygmud")
 
-[node name="Circle_009" type="MeshInstance3D" parent="DoriHome" unique_id=684309350]
+[node name="Circle_009" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=684309350]
 transform = Transform3D(16.758982, 46.04494, 1.4603137e-05, 0, -1.7523766e-05, 48.999996, 46.04494, -16.758982, -5.8412547e-06, -8.809999, 0.95, -15.9)
 mesh = SubResource("ArrayMesh_3ne5a")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle_009" unique_id=706200435]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle_009" unique_id=706200435]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle_009/StaticBody3D" unique_id=1128496255]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle_009/StaticBody3D" unique_id=1128496255]
 shape = SubResource("ConcavePolygonShape3D_5ycw2")
 
-[node name="clothbag" type="MeshInstance3D" parent="DoriHome" unique_id=1862995074]
+[node name="clothbag" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1862995074]
 transform = Transform3D(61.440002, 0, 0, 0, -7.324219e-06, 61.44, 0, -61.44, -7.324219e-06, -0.79999995, 0, -15.8)
 mesh = SubResource("ArrayMesh_vm6n2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/clothbag" unique_id=1540581651]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/clothbag" unique_id=1540581651]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/clothbag/StaticBody3D" unique_id=798065253]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/clothbag/StaticBody3D" unique_id=798065253]
 shape = SubResource("ConcavePolygonShape3D_q63k0")
 
-[node name="clothbag_001" type="MeshInstance3D" parent="DoriHome" unique_id=803314694]
+[node name="clothbag_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=803314694]
 transform = Transform3D(61.440002, 0, 0, 0, -7.324219e-06, 61.44, 0, -61.44, -7.324219e-06, 0.10000014, 1, -15.8)
 mesh = SubResource("ArrayMesh_pvnff")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/clothbag_001" unique_id=2000227164]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/clothbag_001" unique_id=2000227164]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/clothbag_001/StaticBody3D" unique_id=35525260]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/clothbag_001/StaticBody3D" unique_id=35525260]
 shape = SubResource("ConcavePolygonShape3D_wbvt5")
 
-[node name="Plane_007" type="MeshInstance3D" parent="DoriHome" unique_id=405603671]
+[node name="Plane_007" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=405603671]
 transform = Transform3D(96.59258, 25.88191, 4.4703484e-06, 0, -2.3841858e-05, 100, 25.88191, -96.59259, -2.3841858e-05, 1, 1.02, -15.8)
 mesh = SubResource("ArrayMesh_h5ia8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Plane_007" unique_id=1814420067]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Plane_007" unique_id=1814420067]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Plane_007/StaticBody3D" unique_id=786319948]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Plane_007/StaticBody3D" unique_id=786319948]
 shape = SubResource("ConcavePolygonShape3D_6yxnw")
 
-[node name="curtain_001" type="MeshInstance3D" parent="DoriHome" unique_id=1349860353]
+[node name="curtain_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1349860353]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -7.4, 0, -3.2)
 mesh = SubResource("ArrayMesh_6oxxw")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/curtain_001" unique_id=1954943412]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/curtain_001" unique_id=1954943412]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/curtain_001/StaticBody3D" unique_id=1338970296]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/curtain_001/StaticBody3D" unique_id=1338970296]
 shape = SubResource("ConcavePolygonShape3D_fudb1")
 
-[node name="Door_001" type="MeshInstance3D" parent="DoriHome" unique_id=336793539]
+[node name="Door_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=336793539]
 transform = Transform3D(1.1920929e-05, -100, -1.4901161e-05, -2.9802322e-06, -1.1920929e-05, 99.99999, -100, -5.9604645e-06, 0, -2.9999998, 0, -5.4999995)
 mesh = SubResource("ArrayMesh_cmroi")
 
-[node name="Plane_006" type="MeshInstance3D" parent="DoriHome/Door_001" unique_id=1730109934]
+[node name="Plane_006" type="MeshInstance3D" parent="Node3D/DoriHome/Door_001" unique_id=1730109934]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004518738, -5.5496694e-05, 0)
 mesh = SubResource("ArrayMesh_00f1e")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Door_001" unique_id=2108584883]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Door_001" unique_id=2108584883]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Door_001/StaticBody3D" unique_id=755187923]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Door_001/StaticBody3D" unique_id=755187923]
 shape = SubResource("ConcavePolygonShape3D_iwffe")
 
-[node name="table" type="MeshInstance3D" parent="DoriHome" unique_id=2051341655]
+[node name="table" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=2051341655]
 transform = Transform3D(84.00001, 0, 0, 0, -1.0013581e-05, 84, 0, -84, -1.0013581e-05, -6.9999995, 0, -10.5)
 mesh = SubResource("ArrayMesh_lr0un")
 
-[node name="chair_001" type="MeshInstance3D" parent="DoriHome/table" unique_id=1565367780]
+[node name="chair_001" type="MeshInstance3D" parent="Node3D/DoriHome/table" unique_id=1565367780]
 transform = Transform3D(1.9158635e-07, -1.0714284, 0, 1.0714284, 1.9158635e-07, 0, 0, 0, 1.0714285, -0.01666666, 0.0011904621, 0)
 mesh = SubResource("ArrayMesh_lo1gl")
 
-[node name="chair_002" type="MeshInstance3D" parent="DoriHome/table" unique_id=701677332]
+[node name="chair_002" type="MeshInstance3D" parent="Node3D/DoriHome/table" unique_id=701677332]
 transform = Transform3D(-1.9158635e-07, 1.0714284, -9.366726e-08, 1.0714284, 1.2772423e-07, -1.5225915e-14, 0, 9.366726e-08, 1.0714285, 0.016666675, -1.9073486e-08, 0)
 mesh = SubResource("ArrayMesh_3rguu")
 
-[node name="chair_003" type="MeshInstance3D" parent="DoriHome/table" unique_id=1988032569]
+[node name="chair_003" type="MeshInstance3D" parent="Node3D/DoriHome/table" unique_id=1988032569]
 transform = Transform3D(1.0714285, 1.617812e-07, -9.366726e-08, 1.617812e-07, -1.0714285, -1.41433614e-14, 9.366726e-08, 0, 1.0714285, 9.536743e-09, -0.0107142925, 0)
 mesh = SubResource("ArrayMesh_minpu")
 
-[node name="chair_004" type="MeshInstance3D" parent="DoriHome/table" unique_id=1665421530]
+[node name="chair_004" type="MeshInstance3D" parent="Node3D/DoriHome/table" unique_id=1665421530]
 transform = Transform3D(-1.0714285, 1.873345e-07, -1.6377302e-14, 1.873345e-07, 1.0714285, -9.366726e-08, -9.075353e-22, 9.366726e-08, 1.0714285, 9.536743e-09, 0.009523792, 0)
 mesh = SubResource("ArrayMesh_6wcad")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/table" unique_id=165204409]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/table" unique_id=165204409]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/table/StaticBody3D" unique_id=914382428]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/table/StaticBody3D" unique_id=914382428]
 shape = SubResource("ConcavePolygonShape3D_4s1qg")
 
-[node name="couch" type="MeshInstance3D" parent="DoriHome" unique_id=375973523]
+[node name="couch" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=375973523]
 transform = Transform3D(1.1920929e-05, -100, -1.4901161e-05, -2.9802322e-06, -1.1920929e-05, 99.99999, -100, -5.9604645e-06, 0, -8.4, 0, -6.7)
 mesh = SubResource("ArrayMesh_lnmm8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/couch" unique_id=705825698]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/couch" unique_id=705825698]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/couch/StaticBody3D" unique_id=723677880]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/couch/StaticBody3D" unique_id=723677880]
 shape = SubResource("ConcavePolygonShape3D_rg3a6")
 
-[node name="couch_001" type="MeshInstance3D" parent="DoriHome" unique_id=1467329943]
+[node name="couch_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1467329943]
 transform = Transform3D(-5.9604645e-06, 100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, -2.9802322e-06, -5.9604645e-06, -5.2843876, 0.3909633, -7.5036483)
 mesh = SubResource("ArrayMesh_awrop")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/couch_001" unique_id=684040925]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/couch_001" unique_id=684040925]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/couch_001/StaticBody3D" unique_id=1501880641]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/couch_001/StaticBody3D" unique_id=1501880641]
 shape = SubResource("ConcavePolygonShape3D_mx14w")
 
-[node name="couch_002" type="MeshInstance3D" parent="DoriHome" unique_id=1896990622]
+[node name="couch_002" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1896990622]
 transform = Transform3D(-100, 2.384974e-06, -8.742278e-06, -8.742278e-06, 1.7881393e-05, 99.99999, 2.3849755e-06, 99.99999, -1.1920929e-05, -6.784387, 0.3909633, -4.5036483)
 mesh = SubResource("ArrayMesh_x8dvp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/couch_002" unique_id=1597946042]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/couch_002" unique_id=1597946042]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/couch_002/StaticBody3D" unique_id=1437274930]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/couch_002/StaticBody3D" unique_id=1437274930]
 shape = SubResource("ConcavePolygonShape3D_ces5m")
 
-[node name="couch_003" type="MeshInstance3D" parent="DoriHome" unique_id=1780991065]
+[node name="couch_003" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1780991065]
 transform = Transform3D(0, 100, -2.9802322e-06, 2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, -5.2843876, 0.3909633, -6.5036483)
 mesh = SubResource("ArrayMesh_a1xbb")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/couch_003" unique_id=396101418]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/couch_003" unique_id=396101418]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/couch_003/StaticBody3D" unique_id=346550334]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/couch_003/StaticBody3D" unique_id=346550334]
 shape = SubResource("ConcavePolygonShape3D_cfd5r")
 
-[node name="Cube_004" type="MeshInstance3D" parent="DoriHome" unique_id=1329680371]
+[node name="Cube_004" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1329680371]
 transform = Transform3D(1.1920929e-05, -100, -1.4901161e-05, -2.9802322e-06, -1.1920929e-05, 99.99999, -100, -5.9604645e-06, 0, -10.82, 0, -10.799999)
 mesh = SubResource("ArrayMesh_0dgts")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_004" unique_id=1964417831]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_004" unique_id=1964417831]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_004/StaticBody3D" unique_id=81231329]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_004/StaticBody3D" unique_id=81231329]
 shape = SubResource("ConcavePolygonShape3D_mqbss")
 
-[node name="duck" type="MeshInstance3D" parent="DoriHome" unique_id=211453630]
+[node name="duck" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=211453630]
 transform = Transform3D(9.6, 0, 0, 0, -1.1444092e-06, 9.599999, 0, -9.599999, -1.1444092e-06, -10.4, 0.9, -9.8)
 mesh = SubResource("ArrayMesh_f7rsp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/duck" unique_id=2013088609]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/duck" unique_id=2013088609]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/duck/StaticBody3D" unique_id=795601333]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/duck/StaticBody3D" unique_id=795601333]
 shape = SubResource("ConcavePolygonShape3D_3olo3")
 
-[node name="libr" type="MeshInstance3D" parent="DoriHome" unique_id=586288590]
+[node name="libr" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=586288590]
 transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, -10.9, 0, -8.7)
 mesh = SubResource("ArrayMesh_6l5j4")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/libr" unique_id=373832976]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/libr" unique_id=373832976]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/libr/StaticBody3D" unique_id=732941429]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/libr/StaticBody3D" unique_id=732941429]
 shape = SubResource("ConcavePolygonShape3D_rv44c")
 
-[node name="pecera" type="MeshInstance3D" parent="DoriHome" unique_id=1475414698]
+[node name="pecera" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1475414698]
 transform = Transform3D(1.1920929e-05, 100, 1.4901161e-05, 2.9802322e-06, -1.1920929e-05, 99.99999, 100, -5.9604645e-06, 0, -3.5, 0, -8.8)
 mesh = SubResource("ArrayMesh_mnog3")
 
-[node name="Cube_013" type="MeshInstance3D" parent="DoriHome/pecera" unique_id=790438504]
+[node name="Cube_013" type="MeshInstance3D" parent="Node3D/DoriHome/pecera" unique_id=790438504]
 transform = Transform3D(1.32, 0, 0, 0, 1.32, 0, 0, 0, 1.32, 0, 0, 0)
 mesh = SubResource("ArrayMesh_k3mi7")
 
-[node name="Cube_020" type="MeshInstance3D" parent="DoriHome/pecera" unique_id=1111203835]
+[node name="Cube_020" type="MeshInstance3D" parent="Node3D/DoriHome/pecera" unique_id=1111203835]
 transform = Transform3D(1.32, 0, 0, 0, 1.32, 0, 0, 0, 1.32, -0.006433344, -0.003959999, 0.00016665999)
 mesh = SubResource("ArrayMesh_bcjjf")
 
-[node name="Cube_027" type="MeshInstance3D" parent="DoriHome/pecera" unique_id=4791138]
+[node name="Cube_027" type="MeshInstance3D" parent="Node3D/DoriHome/pecera" unique_id=4791138]
 transform = Transform3D(1.32, 0, 0, 0, 1.32, 0, 0, 0, 1.32, 0.006433334, -0.003959999, 0.00016665999)
 mesh = SubResource("ArrayMesh_ldfm6")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/pecera" unique_id=1285282554]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/pecera" unique_id=1285282554]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/pecera/StaticBody3D" unique_id=1575547617]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/pecera/StaticBody3D" unique_id=1575547617]
 shape = SubResource("ConcavePolygonShape3D_7lbuk")
 
-[node name="Circle" type="MeshInstance3D" parent="DoriHome" unique_id=1835050996]
+[node name="Circle" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1835050996]
 transform = Transform3D(39.999996, 0, 0, 0, -4.768371e-06, 39.999992, 0, -39.999992, -4.768371e-06, -10.4, 0, -3.6999998)
 mesh = SubResource("ArrayMesh_pjm1f")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle" unique_id=544275120]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle" unique_id=544275120]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle/StaticBody3D" unique_id=287378144]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle/StaticBody3D" unique_id=287378144]
 shape = SubResource("ConcavePolygonShape3D_2mo3y")
 
-[node name="Circle_001" type="MeshInstance3D" parent="DoriHome" unique_id=1400114919]
+[node name="Circle_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1400114919]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -10.55, 0, -7.46)
 mesh = SubResource("ArrayMesh_4ng5r")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle_001" unique_id=171984925]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle_001" unique_id=171984925]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle_001/StaticBody3D" unique_id=1427227330]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle_001/StaticBody3D" unique_id=1427227330]
 shape = SubResource("ConcavePolygonShape3D_rjydv")
 
-[node name="Circle_002" type="MeshInstance3D" parent="DoriHome" unique_id=181998917]
+[node name="Circle_002" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=181998917]
 transform = Transform3D(7.5000005, 0, 0, 0, -8.9406973e-07, 7.5, 0, -7.5, -8.9406973e-07, -6.6000004, 0.54401195, -6.8)
 mesh = SubResource("ArrayMesh_as2kj")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle_002" unique_id=195183988]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle_002" unique_id=195183988]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle_002/StaticBody3D" unique_id=569483732]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle_002/StaticBody3D" unique_id=569483732]
 shape = SubResource("ConcavePolygonShape3D_vc3ym")
 
-[node name="Plane" type="MeshInstance3D" parent="DoriHome" unique_id=620251633]
+[node name="Plane" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=620251633]
 transform = Transform3D(246.4, 0, 0, 0, -2.9373168e-05, 246.39998, 0, -246.39998, -2.9373168e-05, -6.8, 0, -6.1)
 mesh = SubResource("ArrayMesh_8hqt8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Plane" unique_id=2028403308]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Plane" unique_id=2028403308]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Plane/StaticBody3D" unique_id=977082288]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Plane/StaticBody3D" unique_id=977082288]
 shape = SubResource("ConcavePolygonShape3D_e48u2")
 
-[node name="Circle_003" type="MeshInstance3D" parent="DoriHome" unique_id=56651560]
+[node name="Circle_003" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=56651560]
 transform = Transform3D(1.4305115e-06, 1.0490735e-06, 24, 4.2632564e-14, 24, -1.0490735e-06, -24, 1.2789769e-13, 1.4305115e-06, -10.9, 2.3000002, -7.3000007)
 mesh = SubResource("ArrayMesh_twtev")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle_003" unique_id=1818901520]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle_003" unique_id=1818901520]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle_003/StaticBody3D" unique_id=131598406]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle_003/StaticBody3D" unique_id=131598406]
 shape = SubResource("ConcavePolygonShape3D_ogtbe")
 
-[node name="Circle_004" type="MeshInstance3D" parent="DoriHome" unique_id=854036416]
+[node name="Circle_004" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=854036416]
 transform = Transform3D(0, 120.00001, 3.576279e-06, 3.576279e-06, 0, 120.00001, 120.00001, 3.576279e-06, 0, -3.3, 0, -7.1000004)
 mesh = SubResource("ArrayMesh_fjpce")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle_004" unique_id=800213859]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle_004" unique_id=800213859]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle_004/StaticBody3D" unique_id=764116350]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle_004/StaticBody3D" unique_id=764116350]
 shape = SubResource("ConcavePolygonShape3D_wfe4m")
 
-[node name="lilTableXD" type="MeshInstance3D" parent="DoriHome" unique_id=1489067727]
+[node name="lilTableXD" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1489067727]
 transform = Transform3D(1.1920929e-05, 100, 1.4901161e-05, 2.9802322e-06, -1.1920929e-05, 99.99999, 100, -5.9604645e-06, 0, -6.8, 0, -6.7)
 mesh = SubResource("ArrayMesh_wbvmt")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/lilTableXD" unique_id=1089222242]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/lilTableXD" unique_id=1089222242]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/lilTableXD/StaticBody3D" unique_id=1734542801]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/lilTableXD/StaticBody3D" unique_id=1734542801]
 shape = SubResource("ConcavePolygonShape3D_tdigv")
 
-[node name="Cube_009" type="MeshInstance3D" parent="DoriHome" unique_id=1579349389]
+[node name="Cube_009" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1579349389]
 transform = Transform3D(90, 0, 0, 0, -1.0728836e-05, 89.99999, 0, -89.99999, -1.0728836e-05, -4.2999997, 0, -12.9)
 mesh = SubResource("ArrayMesh_no802")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_009" unique_id=844608904]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_009" unique_id=844608904]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_009/StaticBody3D" unique_id=1427251379]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_009/StaticBody3D" unique_id=1427251379]
 shape = SubResource("ConcavePolygonShape3D_i8r1m")
 
-[node name="Cube_028" type="MeshInstance3D" parent="DoriHome" unique_id=1267123411]
+[node name="Cube_028" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1267123411]
 transform = Transform3D(0, -47.124004, -1.4044048e-06, -1.4044048e-06, 0, 47.124004, -47.124004, 1.4044048e-06, 0, -10.9, 1.4, -6.4)
 mesh = SubResource("ArrayMesh_u8d6d")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_028" unique_id=402234749]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_028" unique_id=402234749]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_028/StaticBody3D" unique_id=442341933]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_028/StaticBody3D" unique_id=442341933]
 shape = SubResource("ConcavePolygonShape3D_ynaa0")
 
-[node name="Cube_029" type="MeshInstance3D" parent="DoriHome" unique_id=313302027]
+[node name="Cube_029" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=313302027]
 transform = Transform3D(-31.680002, -1.2336649e-05, 9.003998e-13, 0, 1.8882753e-06, 31.680002, -1.2336649e-05, 31.680002, -3.7765506e-06, -6.5, 1.7, -3.1)
 mesh = SubResource("ArrayMesh_3diuw")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_029" unique_id=1505164868]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_029" unique_id=1505164868]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_029/StaticBody3D" unique_id=1076830309]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_029/StaticBody3D" unique_id=1076830309]
 shape = SubResource("ConcavePolygonShape3D_6icfg")
 
-[node name="Cube_030" type="MeshInstance3D" parent="DoriHome" unique_id=962438522]
+[node name="Cube_030" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=962438522]
 transform = Transform3D(7.081032e-06, 39.600002, 5.9008603e-06, -1.180172e-06, -4.720688e-06, 39.600002, 39.600002, -5.9008603e-06, 2.360344e-06, -3.1, 1.6, -10.799999)
 mesh = SubResource("ArrayMesh_x8evk")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_030" unique_id=2041479247]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_030" unique_id=2041479247]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_030/StaticBody3D" unique_id=2103021986]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_030/StaticBody3D" unique_id=2103021986]
 shape = SubResource("ConcavePolygonShape3D_1amqh")
 
-[node name="Cube_031" type="MeshInstance3D" parent="DoriHome" unique_id=1884270372]
+[node name="Cube_031" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1884270372]
 transform = Transform3D(0, 67.32001, 2.0062926e-06, 2.0062926e-06, 0, 67.32001, 67.32001, 2.0062926e-06, 0, -3.1, 2, -7)
 mesh = SubResource("ArrayMesh_gjvrs")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_031" unique_id=1510815268]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_031" unique_id=1510815268]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_031/StaticBody3D" unique_id=341085909]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_031/StaticBody3D" unique_id=341085909]
 shape = SubResource("ConcavePolygonShape3D_6s2vr")
 
-[node name="Cube_032" type="MeshInstance3D" parent="DoriHome" unique_id=1379564907]
+[node name="Cube_032" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1379564907]
 transform = Transform3D(39.600002, 0, 0, 0, 2.360344e-06, 39.600002, 0, -39.600002, 2.360344e-06, -3.6799996, 2.1, -16.39)
 mesh = SubResource("ArrayMesh_mxh1r")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_032" unique_id=2117919211]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_032" unique_id=2117919211]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_032/StaticBody3D" unique_id=546063311]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_032/StaticBody3D" unique_id=546063311]
 shape = SubResource("ConcavePolygonShape3D_i70sb")
 
-[node name="first aid" type="MeshInstance3D" parent="DoriHome" unique_id=310652444]
+[node name="first aid" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=310652444]
 transform = Transform3D(0, -24, -7.1525574e-07, -7.1525574e-07, 0, 24, -24, 7.1525574e-07, 0, -10.7, 1.9700191, -9.8)
 mesh = SubResource("ArrayMesh_kn31q")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/first aid" unique_id=1736993826]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/first aid" unique_id=1736993826]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/first aid/StaticBody3D" unique_id=867869435]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/first aid/StaticBody3D" unique_id=867869435]
 shape = SubResource("ConcavePolygonShape3D_ao21a")
 
-[node name="table_001" type="MeshInstance3D" parent="DoriHome" unique_id=1449959246]
+[node name="table_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1449959246]
 transform = Transform3D(0, 100, 2.9802322e-06, 2.9802322e-06, 0, 100, 100, 2.9802322e-06, 0, -3.5, 0, -10.5)
 mesh = SubResource("ArrayMesh_c16jm")
 
-[node name="table_002" type="MeshInstance3D" parent="DoriHome/table_001" unique_id=829825625]
+[node name="table_002" type="MeshInstance3D" parent="Node3D/DoriHome/table_001" unique_id=829825625]
 mesh = SubResource("ArrayMesh_hkwro")
 
-[node name="table_003" type="MeshInstance3D" parent="DoriHome/table_001" unique_id=1353003334]
+[node name="table_003" type="MeshInstance3D" parent="Node3D/DoriHome/table_001" unique_id=1353003334]
 mesh = SubResource("ArrayMesh_0dbev")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/table_001" unique_id=1752446971]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/table_001" unique_id=1752446971]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/table_001/StaticBody3D" unique_id=922116425]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/table_001/StaticBody3D" unique_id=922116425]
 shape = SubResource("ConcavePolygonShape3D_og7j6")
 
-[node name="radio" type="MeshInstance3D" parent="DoriHome" unique_id=1262592873]
+[node name="radio" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1262592873]
 transform = Transform3D(0, 30.000002, 8.9406973e-07, 8.9406973e-07, 0, 30.000002, 30.000002, 8.9406973e-07, 0, -3.44, 0, -10.5)
 mesh = SubResource("ArrayMesh_lxeeh")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/radio" unique_id=266172729]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/radio" unique_id=266172729]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/radio/StaticBody3D" unique_id=656194957]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/radio/StaticBody3D" unique_id=656194957]
 shape = SubResource("ConcavePolygonShape3D_2haij")
 
-[node name="radio_001" type="MeshInstance3D" parent="DoriHome" unique_id=1465462325]
+[node name="radio_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1465462325]
 transform = Transform3D(0, 30.000002, 8.9406973e-07, 8.9406973e-07, 0, 30.000002, 30.000002, 8.9406973e-07, 0, -3.44, 0, -11.1)
 mesh = SubResource("ArrayMesh_2gj84")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/radio_001" unique_id=894424120]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/radio_001" unique_id=894424120]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/radio_001/StaticBody3D" unique_id=571753994]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/radio_001/StaticBody3D" unique_id=571753994]
 shape = SubResource("ConcavePolygonShape3D_km0dx")
 
-[node name="radio_002" type="MeshInstance3D" parent="DoriHome" unique_id=1615815297]
+[node name="radio_002" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1615815297]
 transform = Transform3D(0, 30.000002, 8.9406973e-07, 8.9406973e-07, 0, 30.000002, 30.000002, 8.9406973e-07, 0, -3.44, 0, -9.9)
 mesh = SubResource("ArrayMesh_e1wjl")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/radio_002" unique_id=296382045]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/radio_002" unique_id=296382045]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/radio_002/StaticBody3D" unique_id=1036765198]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/radio_002/StaticBody3D" unique_id=1036765198]
 shape = SubResource("ConcavePolygonShape3D_tm2ih")
 
-[node name="Circle_005" type="MeshInstance3D" parent="DoriHome" unique_id=382532686]
+[node name="Circle_005" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=382532686]
 transform = Transform3D(39.999996, 0, 0, 0, -4.768371e-06, 39.999992, 0, -39.999992, -4.768371e-06, -7.011934, 0.54873013, -6.644317)
 mesh = SubResource("ArrayMesh_m3d25")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle_005" unique_id=439134048]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle_005" unique_id=439134048]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle_005/StaticBody3D" unique_id=1127535840]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle_005/StaticBody3D" unique_id=1127535840]
 shape = SubResource("ConcavePolygonShape3D_eqrhc")
 
-[node name="Cube_033" type="MeshInstance3D" parent="DoriHome" unique_id=1324905730]
+[node name="Cube_033" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1324905730]
 transform = Transform3D(90, 0, 0, 0, -1.0728836e-05, 89.99999, 0, -89.99999, -1.0728836e-05, -6.9, 0.4, -8.6)
 visible = false
 mesh = SubResource("ArrayMesh_atr1v")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_033" unique_id=1261665809]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_033" unique_id=1261665809]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_033/StaticBody3D" unique_id=171622976]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_033/StaticBody3D" unique_id=171622976]
 shape = SubResource("ConcavePolygonShape3D_gr8ju")
 
-[node name="monitor" type="MeshInstance3D" parent="DoriHome" unique_id=1872484367]
+[node name="monitor" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1872484367]
 transform = Transform3D(60.000004, 0, 0, 0, -7.152558e-06, 60, 0, -60, -7.152558e-06, 3.0420666, 0.9914549, 1.3509334)
 mesh = SubResource("ArrayMesh_ad17a")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/monitor" unique_id=155681948]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/monitor" unique_id=155681948]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/monitor/StaticBody3D" unique_id=1030424665]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/monitor/StaticBody3D" unique_id=1030424665]
 shape = SubResource("ConcavePolygonShape3D_jm0bu")
 
-[node name="mouse" type="MeshInstance3D" parent="DoriHome" unique_id=524725853]
+[node name="mouse" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=524725853]
 transform = Transform3D(60.000004, 0, 0, 0, -7.152558e-06, 60, 0, -60, -7.152558e-06, 3.5940669, 0.9914549, 1.5909333)
 mesh = SubResource("ArrayMesh_qkhgs")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/mouse" unique_id=1253385380]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/mouse" unique_id=1253385380]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/mouse/StaticBody3D" unique_id=1196030553]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/mouse/StaticBody3D" unique_id=1196030553]
 shape = SubResource("ConcavePolygonShape3D_282ir")
 
-[node name="case pc" type="MeshInstance3D" parent="DoriHome" unique_id=346271992]
+[node name="case pc" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=346271992]
 transform = Transform3D(0, 60.000004, 1.7881395e-06, 1.7881395e-06, 0, 60.000004, 60.000004, 1.7881395e-06, 0, 3.6120663, 1.231455, 1.0109334)
 mesh = SubResource("ArrayMesh_rm2ce")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/case pc" unique_id=1418840035]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/case pc" unique_id=1418840035]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/case pc/StaticBody3D" unique_id=861414364]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/case pc/StaticBody3D" unique_id=861414364]
 shape = SubResource("ConcavePolygonShape3D_r0h4y")
 
-[node name="parlant" type="MeshInstance3D" parent="DoriHome" unique_id=1591611585]
+[node name="parlant" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1591611585]
 transform = Transform3D(60.000004, 0, 0, 0, -7.152558e-06, 60, 0, -60, -7.152558e-06, 3.4260664, 1.0945495, 1.2781334)
 mesh = SubResource("ArrayMesh_xj0m3")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/parlant" unique_id=388790721]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/parlant" unique_id=388790721]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/parlant/StaticBody3D" unique_id=11684659]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/parlant/StaticBody3D" unique_id=11684659]
 shape = SubResource("ConcavePolygonShape3D_880a0")
 
-[node name="keyboard" type="MeshInstance3D" parent="DoriHome" unique_id=2081724812]
+[node name="keyboard" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=2081724812]
 transform = Transform3D(60.000004, 0, 0, 0, -7.152558e-06, 60, 0, -60, -7.152558e-06, 3.0420666, 0.9914549, 1.7349334)
 mesh = SubResource("ArrayMesh_xbnwn")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/keyboard" unique_id=226919509]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/keyboard" unique_id=226919509]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/keyboard/StaticBody3D" unique_id=174849054]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/keyboard/StaticBody3D" unique_id=174849054]
 shape = SubResource("ConcavePolygonShape3D_33dj7")
 
-[node name="Cube_014" type="MeshInstance3D" parent="DoriHome" unique_id=850717882]
+[node name="Cube_014" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=850717882]
 transform = Transform3D(42.42641, -42.42641, -3.576279e-06, 0, -7.152558e-06, 60.00001, -42.42641, -42.42641, -7.152558e-06, -1.7827339, 0.511455, 1.8693331)
 mesh = SubResource("ArrayMesh_7uy4l")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_014" unique_id=1817326648]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_014" unique_id=1817326648]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_014/StaticBody3D" unique_id=2111746454]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_014/StaticBody3D" unique_id=2111746454]
 shape = SubResource("ConcavePolygonShape3D_0f5pq")
 
-[node name="Cube_015" type="MeshInstance3D" parent="DoriHome" unique_id=2094904795]
+[node name="Cube_015" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=2094904795]
 transform = Transform3D(54.378475, -25.357098, -4.470349e-06, 0, -7.1525583e-06, 60.000004, -25.357096, -54.378475, -7.152558e-06, 1.947267, 0.9995603, 1.0393333)
 mesh = SubResource("ArrayMesh_e0xpg")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_015" unique_id=1410875737]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_015" unique_id=1410875737]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_015/StaticBody3D" unique_id=2123342370]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_015/StaticBody3D" unique_id=2123342370]
 shape = SubResource("ConcavePolygonShape3D_xdpsv")
 
-[node name="Cube_016" type="MeshInstance3D" parent="DoriHome" unique_id=517838185]
+[node name="Cube_016" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=517838185]
 transform = Transform3D(59.088467, 10.418892, 0, 0, 0, 60.000004, 10.418892, -59.08847, 0, 3.4472666, 1.0123106, -0.5606666)
 mesh = SubResource("ArrayMesh_cf8gu")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_016" unique_id=1979012100]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_016" unique_id=1979012100]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_016/StaticBody3D" unique_id=349731180]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_016/StaticBody3D" unique_id=349731180]
 shape = SubResource("ConcavePolygonShape3D_y8bet")
 
-[node name="Cube_017" type="MeshInstance3D" parent="DoriHome" unique_id=1148043576]
+[node name="Cube_017" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1148043576]
 transform = Transform3D(34.41459, 49.149124, 1.7881395e-06, -1.7881395e-06, 0, 60.000004, 49.149124, -34.414593, 0, 3.1872666, 1.0030078, -1.9006668)
 mesh = SubResource("ArrayMesh_5qso0")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_017" unique_id=2084598100]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_017" unique_id=2084598100]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_017/StaticBody3D" unique_id=533150203]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_017/StaticBody3D" unique_id=533150203]
 shape = SubResource("ConcavePolygonShape3D_3v1rh")
 
-[node name="Cube_018" type="MeshInstance3D" parent="DoriHome" unique_id=548361628]
+[node name="Cube_018" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=548361628]
 transform = Transform3D(7.152558e-06, 60.000004, 8.940698e-06, 1.7881395e-06, -7.152558e-06, 60, 60.000004, -3.576279e-06, 0, 3.0272667, -0.008545056, 0.4493332)
 mesh = SubResource("ArrayMesh_j4cg6")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_018" unique_id=1486279805]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_018" unique_id=1486279805]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_018/StaticBody3D" unique_id=1540619614]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_018/StaticBody3D" unique_id=1540619614]
 shape = SubResource("ConcavePolygonShape3D_jvek3")
 
-[node name="Cube_019" type="MeshInstance3D" parent="DoriHome" unique_id=379731631]
+[node name="Cube_019" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=379731631]
 transform = Transform3D(60.000004, 0, 0, 0, -7.152558e-06, 60, 0, -60, -7.152558e-06, -2.512733, 1.4914551, -2.8006666)
 mesh = SubResource("ArrayMesh_wubqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_019" unique_id=493324593]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_019" unique_id=493324593]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_019/StaticBody3D" unique_id=1796125809]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_019/StaticBody3D" unique_id=1796125809]
 shape = SubResource("ConcavePolygonShape3D_ubb7o")
 
-[node name="parlant_001" type="MeshInstance3D" parent="DoriHome" unique_id=164210778]
+[node name="parlant_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=164210778]
 transform = Transform3D(60.000004, 0, 0, 0, -7.152558e-06, 60, 0, -60, -7.152558e-06, 2.6580665, 1.0945495, 1.2781334)
 mesh = SubResource("ArrayMesh_uabed")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/parlant_001" unique_id=633416636]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/parlant_001" unique_id=633416636]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/parlant_001/StaticBody3D" unique_id=1551216509]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/parlant_001/StaticBody3D" unique_id=1551216509]
 shape = SubResource("ConcavePolygonShape3D_qaja7")
 
-[node name="Bed" type="MeshInstance3D" parent="DoriHome" unique_id=683085447]
+[node name="Bed" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=683085447]
 transform = Transform3D(-100, -3.8941438e-05, 2.842171e-12, 0, 5.9604645e-06, 100, -3.8941438e-05, 100, -1.1920929e-05, -2.1, 0, 1.4)
 mesh = SubResource("ArrayMesh_mqkow")
+script = ExtResource("12_iwbsj")
 
-[node name="Cube" type="MeshInstance3D" parent="DoriHome/Bed" unique_id=860841871]
+[node name="Cube" type="MeshInstance3D" parent="Node3D/DoriHome/Bed" unique_id=860841871]
 mesh = SubResource("ArrayMesh_0mjwd")
 
-[node name="Cube_001" type="MeshInstance3D" parent="DoriHome/Bed" unique_id=1343503461]
+[node name="Cube_001" type="MeshInstance3D" parent="Node3D/DoriHome/Bed" unique_id=1343503461]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004999999, 0.009626652, 0.005562387)
 mesh = SubResource("ArrayMesh_3od2n")
 
-[node name="Cube_002" type="MeshInstance3D" parent="DoriHome/Bed" unique_id=1294072497]
+[node name="Cube_002" type="MeshInstance3D" parent="Node3D/DoriHome/Bed" unique_id=1294072497]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.005, 0.009626654, 0.005562387)
 mesh = SubResource("ArrayMesh_3od2n")
 
-[node name="Cube_003" type="MeshInstance3D" parent="DoriHome/Bed" unique_id=1759849062]
+[node name="Cube_003" type="MeshInstance3D" parent="Node3D/DoriHome/Bed" unique_id=1759849062]
 mesh = SubResource("ArrayMesh_o6u33")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Bed" unique_id=245741790]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Bed" unique_id=245741790]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Bed/StaticBody3D" unique_id=267008522]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Bed/StaticBody3D" unique_id=267008522]
 shape = SubResource("ConcavePolygonShape3D_tl7jd")
 
-[node name="closet" type="MeshInstance3D" parent="DoriHome" unique_id=741893277]
+[node name="Area3D" type="Area3D" parent="Node3D/DoriHome/Bed" unique_id=2947737]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Bed/Area3D" unique_id=1372077387]
+shape = SubResource("ConcavePolygonShape3D_tl7jd")
+
+[node name="closet" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=741893277]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0.8000001, 0, -2.6)
 mesh = SubResource("ArrayMesh_sxud3")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/closet" unique_id=970874697]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/closet" unique_id=970874697]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/closet/StaticBody3D" unique_id=369221806]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/closet/StaticBody3D" unique_id=369221806]
 shape = SubResource("ConcavePolygonShape3D_1jbjw")
 
-[node name="shoerack" type="MeshInstance3D" parent="DoriHome" unique_id=300287796]
+[node name="shoerack" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=300287796]
 transform = Transform3D(-100, -3.8941438e-05, 2.842171e-12, 0, 5.9604645e-06, 100, -3.8941438e-05, 100, -1.1920929e-05, -4.5, 0, 2.8000002)
 mesh = SubResource("ArrayMesh_ej2fp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/shoerack" unique_id=1688915931]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/shoerack" unique_id=1688915931]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/shoerack/StaticBody3D" unique_id=1615090856]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/shoerack/StaticBody3D" unique_id=1615090856]
 shape = SubResource("ConcavePolygonShape3D_t8nl1")
 
-[node name="laundry" type="MeshInstance3D" parent="DoriHome" unique_id=882283693]
+[node name="laundry" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=882283693]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -5.4, 0, 2.5)
 mesh = SubResource("ArrayMesh_s1leo")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/laundry" unique_id=1639412081]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/laundry" unique_id=1639412081]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/laundry/StaticBody3D" unique_id=1824224886]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/laundry/StaticBody3D" unique_id=1824224886]
 shape = SubResource("ConcavePolygonShape3D_74nej")
 
-[node name="curtain" type="MeshInstance3D" parent="DoriHome" unique_id=2136657436]
+[node name="curtain" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=2136657436]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 2.8)
 mesh = SubResource("ArrayMesh_le2ab")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/curtain" unique_id=1845452146]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/curtain" unique_id=1845452146]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/curtain/StaticBody3D" unique_id=1248843068]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/curtain/StaticBody3D" unique_id=1248843068]
 shape = SubResource("ConcavePolygonShape3D_thh7c")
 
-[node name="meson" type="MeshInstance3D" parent="DoriHome" unique_id=559112905]
+[node name="meson" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=559112905]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -0.59999996, 0, -2.7)
 mesh = SubResource("ArrayMesh_msk26")
 
-[node name="Cube_005" type="MeshInstance3D" parent="DoriHome/meson" unique_id=1245819103]
+[node name="Cube_005" type="MeshInstance3D" parent="Node3D/DoriHome/meson" unique_id=1245819103]
 mesh = SubResource("ArrayMesh_4aawf")
 
-[node name="Cube_006" type="MeshInstance3D" parent="DoriHome/meson" unique_id=1047647245]
+[node name="Cube_006" type="MeshInstance3D" parent="Node3D/DoriHome/meson" unique_id=1047647245]
 mesh = SubResource("ArrayMesh_eqy3q")
 
-[node name="Cube_007" type="MeshInstance3D" parent="DoriHome/meson" unique_id=1294743592]
+[node name="Cube_007" type="MeshInstance3D" parent="Node3D/DoriHome/meson" unique_id=1294743592]
 mesh = SubResource("ArrayMesh_lymmt")
 
-[node name="Cube_008" type="MeshInstance3D" parent="DoriHome/meson" unique_id=428722242]
+[node name="Cube_008" type="MeshInstance3D" parent="Node3D/DoriHome/meson" unique_id=428722242]
 mesh = SubResource("ArrayMesh_anhha")
 
-[node name="Plane_002" type="MeshInstance3D" parent="DoriHome/meson" unique_id=1125252565]
+[node name="Plane_002" type="MeshInstance3D" parent="Node3D/DoriHome/meson" unique_id=1125252565]
 transform = Transform3D(0.23400003, 0, 0, 0, 0.23400003, 0, 0, 0, 0.23400003, -0.00040000022, 0.0016000009, 0.0091)
 mesh = SubResource("ArrayMesh_5hmay")
 
-[node name="Plane_003" type="MeshInstance3D" parent="DoriHome/meson" unique_id=1759082327]
+[node name="Plane_003" type="MeshInstance3D" parent="Node3D/DoriHome/meson" unique_id=1759082327]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9604643e-10, -0.011000002, 0)
 mesh = SubResource("ArrayMesh_sxhek")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/meson" unique_id=1142770743]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/meson" unique_id=1142770743]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/meson/StaticBody3D" unique_id=1882572467]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/meson/StaticBody3D" unique_id=1882572467]
 shape = SubResource("ConcavePolygonShape3D_cqyc1")
 
-[node name="guitar" type="MeshInstance3D" parent="DoriHome" unique_id=64299920]
+[node name="guitar" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=64299920]
 transform = Transform3D(-3.727543, -98.89628, -14.339924, -2.2628782, -14.262688, 98.95179, -99.90488, 4.0129604, -1.7062545, -5.6000004, 0, 0.6999999)
 mesh = SubResource("ArrayMesh_y4c2r")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/guitar" unique_id=93097913]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/guitar" unique_id=93097913]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/guitar/StaticBody3D" unique_id=535304324]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/guitar/StaticBody3D" unique_id=535304324]
 shape = SubResource("ConcavePolygonShape3D_fdrm2")
 
-[node name="painting" type="MeshInstance3D" parent="DoriHome" unique_id=145064299]
+[node name="painting" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=145064299]
 transform = Transform3D(0, -45, -1.3411045e-06, -1.3411045e-06, 0, 45, -45, 1.3411045e-06, 0, -5.9, 1.6, 1.7)
 mesh = SubResource("ArrayMesh_aqb28")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/painting" unique_id=689166345]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/painting" unique_id=689166345]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/painting/StaticBody3D" unique_id=821774045]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/painting/StaticBody3D" unique_id=821774045]
 shape = SubResource("ConcavePolygonShape3D_thrbx")
 
-[node name="painting_001" type="MeshInstance3D" parent="DoriHome" unique_id=910405198]
+[node name="painting_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=910405198]
 transform = Transform3D(0, -30.000002, -8.9406973e-07, -8.9406973e-07, 0, 30.000002, -30.000002, 8.9406973e-07, 0, -5.9, 1.6, -0.9)
 mesh = SubResource("ArrayMesh_af50c")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/painting_001" unique_id=564332603]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/painting_001" unique_id=564332603]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/painting_001/StaticBody3D" unique_id=117335653]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/painting_001/StaticBody3D" unique_id=117335653]
 shape = SubResource("ConcavePolygonShape3D_us0p5")
 
-[node name="painting_002" type="MeshInstance3D" parent="DoriHome" unique_id=1798842933]
+[node name="painting_002" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1798842933]
 transform = Transform3D(0, 45, 1.3411045e-06, 1.3411045e-06, 0, 45, 45, 1.3411045e-06, 0, 3.2, 1.3, 0.39999998)
 mesh = SubResource("ArrayMesh_kut0q")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/painting_002" unique_id=1966256853]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/painting_002" unique_id=1966256853]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/painting_002/StaticBody3D" unique_id=651539235]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/painting_002/StaticBody3D" unique_id=651539235]
 shape = SubResource("ConcavePolygonShape3D_upxyc")
 
-[node name="painting_003" type="MeshInstance3D" parent="DoriHome" unique_id=563166341]
+[node name="painting_003" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=563166341]
 transform = Transform3D(-45, -1.7523647e-05, 1.2789769e-12, 0, 2.682209e-06, 45, -1.7523647e-05, 45, -5.364418e-06, 1.5000001, 1.5, 2.9)
 mesh = SubResource("ArrayMesh_25cne")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/painting_003" unique_id=1055923212]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/painting_003" unique_id=1055923212]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/painting_003/StaticBody3D" unique_id=728214151]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/painting_003/StaticBody3D" unique_id=728214151]
 shape = SubResource("ConcavePolygonShape3D_isj13")
 
-[node name="desk" type="MeshInstance3D" parent="DoriHome" unique_id=108324457]
+[node name="desk" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=108324457]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 2.7, 0, 1.1499999)
 mesh = SubResource("ArrayMesh_tpry3")
 
-[node name="Cube_010" type="MeshInstance3D" parent="DoriHome/desk" unique_id=685276320]
+[node name="Cube_010" type="MeshInstance3D" parent="Node3D/DoriHome/desk" unique_id=685276320]
 mesh = SubResource("ArrayMesh_4rldu")
 
-[node name="Cube_011" type="MeshInstance3D" parent="DoriHome/desk" unique_id=142485535]
+[node name="Cube_011" type="MeshInstance3D" parent="Node3D/DoriHome/desk" unique_id=142485535]
 mesh = SubResource("ArrayMesh_3uela")
 
-[node name="Cube_012" type="MeshInstance3D" parent="DoriHome/desk" unique_id=2034350148]
+[node name="Cube_012" type="MeshInstance3D" parent="Node3D/DoriHome/desk" unique_id=2034350148]
 mesh = SubResource("ArrayMesh_a4e2q")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/desk" unique_id=1195121761]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/desk" unique_id=1195121761]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/desk/StaticBody3D" unique_id=1337813819]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/desk/StaticBody3D" unique_id=1337813819]
 shape = SubResource("ConcavePolygonShape3D_q037p")
 
-[node name="bag" type="MeshInstance3D" parent="DoriHome" unique_id=1464246838]
+[node name="bag" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1464246838]
 transform = Transform3D(98.480774, 17.364819, 0, 0, 0, 100, 17.364819, -98.48078, 0, -1.3, 0.9, -2.8)
 mesh = SubResource("ArrayMesh_tqcpe")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/bag" unique_id=1751438402]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/bag" unique_id=1751438402]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/bag/StaticBody3D" unique_id=1855084137]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/bag/StaticBody3D" unique_id=1855084137]
 shape = SubResource("ConcavePolygonShape3D_ql56j")
 
-[node name="backpack" type="MeshInstance3D" parent="DoriHome" unique_id=612346796]
+[node name="backpack" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=612346796]
 transform = Transform3D(99.45458, 3.650396, -9.770398, 2.7801971, -99.56446, -8.89895, -10.05269, 8.578778, -99.122894, -2.5979025, 0.6120501, 1.7066041)
 mesh = SubResource("ArrayMesh_gsrra")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/backpack" unique_id=1037969772]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/backpack" unique_id=1037969772]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/backpack/StaticBody3D" unique_id=60378910]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/backpack/StaticBody3D" unique_id=60378910]
 shape = SubResource("ConcavePolygonShape3D_25f02")
 
-[node name="wdw" type="MeshInstance3D" parent="DoriHome" unique_id=1746324215]
+[node name="wdw" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1746324215]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 2.5, 1.9632437, 3)
 mesh = SubResource("ArrayMesh_t30tf")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/wdw" unique_id=1826775444]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/wdw" unique_id=1826775444]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/wdw/StaticBody3D" unique_id=113810735]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/wdw/StaticBody3D" unique_id=113810735]
 shape = SubResource("ConcavePolygonShape3D_evl74")
 
-[node name="wdw_001" type="MeshInstance3D" parent="DoriHome" unique_id=248211859]
+[node name="wdw_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=248211859]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
 mesh = SubResource("ArrayMesh_hbxe0")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/wdw_001" unique_id=2098431195]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/wdw_001" unique_id=2098431195]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/wdw_001/StaticBody3D" unique_id=425860827]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/wdw_001/StaticBody3D" unique_id=425860827]
 shape = SubResource("ConcavePolygonShape3D_4qmyc")
 
-[node name="wdw_002" type="MeshInstance3D" parent="DoriHome" unique_id=816681008]
+[node name="wdw_002" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=816681008]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -1.1, 0, 0)
 mesh = SubResource("ArrayMesh_2h20j")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/wdw_002" unique_id=1544836596]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/wdw_002" unique_id=1544836596]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/wdw_002/StaticBody3D" unique_id=196165847]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/wdw_002/StaticBody3D" unique_id=196165847]
 shape = SubResource("ConcavePolygonShape3D_j4ctf")
 
-[node name="wdw_003" type="MeshInstance3D" parent="DoriHome" unique_id=2110354544]
+[node name="wdw_003" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=2110354544]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
 mesh = SubResource("ArrayMesh_o6xpe")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/wdw_003" unique_id=1301635320]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/wdw_003" unique_id=1301635320]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/wdw_003/StaticBody3D" unique_id=113081404]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/wdw_003/StaticBody3D" unique_id=113081404]
 shape = SubResource("ConcavePolygonShape3D_b60bg")
 
-[node name="wdw_004" type="MeshInstance3D" parent="DoriHome" unique_id=1956033451]
+[node name="wdw_004" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1956033451]
 transform = Transform3D(76.60445, -64.278755, 2.9802322e-06, -2.9802322e-06, 0, 100, -64.278755, -76.60445, 0, 2.5, 1.9632437, 3)
 mesh = SubResource("ArrayMesh_5kt00")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/wdw_004" unique_id=1880968189]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/wdw_004" unique_id=1880968189]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/wdw_004/StaticBody3D" unique_id=1320563094]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/wdw_004/StaticBody3D" unique_id=1320563094]
 shape = SubResource("ConcavePolygonShape3D_h86p7")
 
-[node name="drawer" type="MeshInstance3D" parent="DoriHome" unique_id=1777700081]
+[node name="drawer" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1777700081]
 transform = Transform3D(0, 100, 2.9802322e-06, 2.9802322e-06, 0, 100, 100, 2.9802322e-06, 0, 3.68, 0, -1.0999999)
 mesh = SubResource("ArrayMesh_glum5")
 
-[node name="Cube_021" type="MeshInstance3D" parent="DoriHome/drawer" unique_id=1606551762]
+[node name="Cube_021" type="MeshInstance3D" parent="Node3D/DoriHome/drawer" unique_id=1606551762]
 mesh = SubResource("ArrayMesh_oeng5")
 
-[node name="Cube_022" type="MeshInstance3D" parent="DoriHome/drawer" unique_id=1414670784]
+[node name="Cube_022" type="MeshInstance3D" parent="Node3D/DoriHome/drawer" unique_id=1414670784]
 mesh = SubResource("ArrayMesh_6yo4w")
 
-[node name="Cube_023" type="MeshInstance3D" parent="DoriHome/drawer" unique_id=1536420180]
+[node name="Cube_023" type="MeshInstance3D" parent="Node3D/DoriHome/drawer" unique_id=1536420180]
 mesh = SubResource("ArrayMesh_eodr4")
 
-[node name="Cube_024" type="MeshInstance3D" parent="DoriHome/drawer" unique_id=1459666583]
+[node name="Cube_024" type="MeshInstance3D" parent="Node3D/DoriHome/drawer" unique_id=1459666583]
 mesh = SubResource("ArrayMesh_2weml")
 
-[node name="Cube_025" type="MeshInstance3D" parent="DoriHome/drawer" unique_id=529925021]
+[node name="Cube_025" type="MeshInstance3D" parent="Node3D/DoriHome/drawer" unique_id=529925021]
 mesh = SubResource("ArrayMesh_xeghg")
 
-[node name="Cube_026" type="MeshInstance3D" parent="DoriHome/drawer" unique_id=1713999615]
+[node name="Cube_026" type="MeshInstance3D" parent="Node3D/DoriHome/drawer" unique_id=1713999615]
 mesh = SubResource("ArrayMesh_0ifo5")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/drawer" unique_id=521119124]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/drawer" unique_id=521119124]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/drawer/StaticBody3D" unique_id=849299170]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/drawer/StaticBody3D" unique_id=849299170]
 shape = SubResource("ConcavePolygonShape3D_a8xoa")
 
-[node name="chair" type="MeshInstance3D" parent="DoriHome" unique_id=185188677]
+[node name="chair" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=185188677]
 transform = Transform3D(-137.08803, -5.338405e-05, 3.896276e-12, 0, 8.171083e-06, 137.08803, -5.338405e-05, 137.08803, -1.6342166e-05, 3.1, 0, 2.3)
 mesh = SubResource("ArrayMesh_36wln")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/chair" unique_id=1354366488]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/chair" unique_id=1354366488]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/chair/StaticBody3D" unique_id=2043898752]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/chair/StaticBody3D" unique_id=2043898752]
 shape = SubResource("ConcavePolygonShape3D_cqie0")
 
-[node name="hanger" type="MeshInstance3D" parent="DoriHome" unique_id=690627162]
+[node name="hanger" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=690627162]
 transform = Transform3D(86.60255, -49.999992, 0, 4.4703484e-06, 1.1920929e-05, 99.99999, -49.999992, -86.60254, 1.1920929e-05, -5.6, 0, -0.39999998)
 mesh = SubResource("ArrayMesh_fp56p")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/hanger" unique_id=1912884780]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/hanger" unique_id=1912884780]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/hanger/StaticBody3D" unique_id=1148986301]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/hanger/StaticBody3D" unique_id=1148986301]
 shape = SubResource("ConcavePolygonShape3D_7v3k4")
 
-[node name="walls" type="MeshInstance3D" parent="DoriHome" unique_id=766940678]
+[node name="walls" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=766940678]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
 mesh = SubResource("ArrayMesh_h7rbb")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/walls" unique_id=741393908]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/walls" unique_id=741393908]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/walls/StaticBody3D" unique_id=361922165]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/walls/StaticBody3D" unique_id=361922165]
 shape = SubResource("ConcavePolygonShape3D_ryhcl")
 
-[node name="Door" type="MeshInstance3D" parent="DoriHome" unique_id=227986744]
+[node name="Door" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=227986744]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -4.5, 0, -3)
 mesh = SubResource("ArrayMesh_fo7l2")
 
-[node name="Plane_001" type="MeshInstance3D" parent="DoriHome/Door" unique_id=1487239664]
+[node name="Plane_001" type="MeshInstance3D" parent="Node3D/DoriHome/Door" unique_id=1487239664]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0045187427, -5.5499077e-05, 0)
 mesh = SubResource("ArrayMesh_f6q78")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Door" unique_id=1517819673]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Door" unique_id=1517819673]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Door/StaticBody3D" unique_id=350931715]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Door/StaticBody3D" unique_id=350931715]
 shape = SubResource("ConcavePolygonShape3D_qoa6n")
 
-[node name="washingmach" type="MeshInstance3D" parent="DoriHome" unique_id=2039927778]
+[node name="washingmach" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=2039927778]
 transform = Transform3D(60.000004, 0, 0, 0, -7.152558e-06, 60, 0, -60, -7.152558e-06, 1.6999998, 0, -15.8)
 mesh = SubResource("ArrayMesh_r6x74")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/washingmach" unique_id=1428021376]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/washingmach" unique_id=1428021376]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/washingmach/StaticBody3D" unique_id=506001910]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/washingmach/StaticBody3D" unique_id=506001910]
 shape = SubResource("ConcavePolygonShape3D_7xk3d")
 
-[node name="bathcab" type="MeshInstance3D" parent="DoriHome" unique_id=826045495]
+[node name="bathcab" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=826045495]
 transform = Transform3D(60.000004, 0, 0, 0, -7.152558e-06, 60, 0, -60, -7.152558e-06, 0.5, 0, -15.8)
 mesh = SubResource("ArrayMesh_luwpl")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/bathcab" unique_id=1325788473]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/bathcab" unique_id=1325788473]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/bathcab/StaticBody3D" unique_id=491922147]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/bathcab/StaticBody3D" unique_id=491922147]
 shape = SubResource("ConcavePolygonShape3D_e6vly")
 
-[node name="bathcab_001" type="MeshInstance3D" parent="DoriHome" unique_id=1256214376]
+[node name="bathcab_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1256214376]
 transform = Transform3D(60.000004, 0, 0, 0, -7.152558e-06, 60, 0, -60, -7.152558e-06, 0.5, 1.9000001, -15.8)
 mesh = SubResource("ArrayMesh_2i2l1")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/bathcab_001" unique_id=1265180190]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/bathcab_001" unique_id=1265180190]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/bathcab_001/StaticBody3D" unique_id=744965322]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/bathcab_001/StaticBody3D" unique_id=744965322]
 shape = SubResource("ConcavePolygonShape3D_6c0of")
 
-[node name="bathcab_002" type="MeshInstance3D" parent="DoriHome" unique_id=1831910051]
+[node name="bathcab_002" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1831910051]
 transform = Transform3D(60.000004, 0, 0, 0, -7.152558e-06, 60, 0, -60, -7.152558e-06, 2.1, 1.9000001, -15.8)
 mesh = SubResource("ArrayMesh_vb2y8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/bathcab_002" unique_id=1397758488]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/bathcab_002" unique_id=1397758488]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/bathcab_002/StaticBody3D" unique_id=1084168010]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/bathcab_002/StaticBody3D" unique_id=1084168010]
 shape = SubResource("ConcavePolygonShape3D_q1wb6")
 
-[node name="bathcab_003" type="MeshInstance3D" parent="DoriHome" unique_id=1408642074]
+[node name="bathcab_003" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1408642074]
 transform = Transform3D(60.000004, 0, 0, 0, -7.152558e-06, 60, 0, -60, -7.152558e-06, 2.9, 0, -15.8)
 mesh = SubResource("ArrayMesh_ghgwu")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/bathcab_003" unique_id=344089376]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/bathcab_003" unique_id=344089376]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/bathcab_003/StaticBody3D" unique_id=786512266]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/bathcab_003/StaticBody3D" unique_id=786512266]
 shape = SubResource("ConcavePolygonShape3D_t4lj6")
 
-[node name="broom" type="MeshInstance3D" parent="DoriHome" unique_id=1942562293]
+[node name="broom" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1942562293]
 transform = Transform3D(-100, 0.00010368025, 1.7811119e-05, -1.50995875e-05, -30.901707, 95.10565, 0.00010410972, 95.10565, 30.901701, 1.6000001, 0, -12.499999)
 mesh = SubResource("ArrayMesh_i1ltu")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/broom" unique_id=477012694]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/broom" unique_id=477012694]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/broom/StaticBody3D" unique_id=1341088243]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/broom/StaticBody3D" unique_id=1341088243]
 shape = SubResource("ConcavePolygonShape3D_havv8")
 
-[node name="bath" type="MeshInstance3D" parent="DoriHome" unique_id=1781001348]
+[node name="bath" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1781001348]
 transform = Transform3D(-81.00001, 1.2230661e-05, -1.1510793e-12, 0, 4.8279767e-06, 81.00001, 1.2230661e-05, 81.00001, -9.655953e-06, 0.099999845, 0, -9.9)
 mesh = SubResource("ArrayMesh_4bdeu")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/bath" unique_id=480825679]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/bath" unique_id=480825679]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/bath/StaticBody3D" unique_id=817001634]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/bath/StaticBody3D" unique_id=817001634]
 shape = SubResource("ConcavePolygonShape3D_jxuap")
 
-[node name="wall_001" type="MeshInstance3D" parent="DoriHome" unique_id=2073205829]
+[node name="wall_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=2073205829]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
 mesh = SubResource("ArrayMesh_b7ghq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/wall_001" unique_id=1854637641]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/wall_001" unique_id=1854637641]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/wall_001/StaticBody3D" unique_id=622242506]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/wall_001/StaticBody3D" unique_id=622242506]
 shape = SubResource("ConcavePolygonShape3D_oec0v")
 
-[node name="Plane_008" type="MeshInstance3D" parent="DoriHome" unique_id=615015157]
+[node name="Plane_008" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=615015157]
 transform = Transform3D(0, -100, -2.8312209e-06, -2.9802322e-06, 0, 95.00001, -100, 2.9802322e-06, 0, -11, 0, -4.9)
 mesh = SubResource("ArrayMesh_8gcql")
 
-[node name="Plane_009" type="MeshInstance3D" parent="DoriHome/Plane_008" unique_id=850750852]
+[node name="Plane_009" type="MeshInstance3D" parent="Node3D/DoriHome/Plane_008" unique_id=850750852]
 transform = Transform3D(1, -3.5527137e-15, 0, 3.5527137e-15, 1, 0, 0, 0, 1, -0.004499998, 0.00010000229, 0)
 mesh = SubResource("ArrayMesh_i1hwf")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Plane_008" unique_id=455468719]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Plane_008" unique_id=455468719]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Plane_008/StaticBody3D" unique_id=1103833121]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Plane_008/StaticBody3D" unique_id=1103833121]
 shape = SubResource("ConcavePolygonShape3D_ay0qb")
 
-[node name="laundry_001" type="MeshInstance3D" parent="DoriHome" unique_id=460955707]
+[node name="laundry_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=460955707]
 transform = Transform3D(1.1920929e-05, 100, 1.4901161e-05, 2.9802322e-06, -1.1920929e-05, 99.99999, 100, -5.9604645e-06, 0, 3.4, 0, -13.2)
 mesh = SubResource("ArrayMesh_5w0pl")
 
-[node name="valve" type="MeshInstance3D" parent="DoriHome/laundry_001" unique_id=1964095552]
+[node name="valve" type="MeshInstance3D" parent="Node3D/DoriHome/laundry_001" unique_id=1964095552]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001936872, 0.012321646)
 mesh = SubResource("ArrayMesh_qwdcx")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/laundry_001" unique_id=278708639]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/laundry_001" unique_id=278708639]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/laundry_001/StaticBody3D" unique_id=1729228330]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/laundry_001/StaticBody3D" unique_id=1729228330]
 shape = SubResource("ConcavePolygonShape3D_7jj23")
 
-[node name="Cube_050" type="MeshInstance3D" parent="DoriHome" unique_id=1127253233]
+[node name="Cube_050" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1127253233]
 transform = Transform3D(0, 80, 2.3841858e-06, 2.3841858e-06, 0, 80, 80, 2.3841858e-06, 0, 2.9, 0, -10.6)
 mesh = SubResource("ArrayMesh_oejg2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_050" unique_id=1878053938]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_050" unique_id=1878053938]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_050/StaticBody3D" unique_id=1094724846]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_050/StaticBody3D" unique_id=1094724846]
 shape = SubResource("ConcavePolygonShape3D_118w8")
 
-[node name="Cube_051" type="MeshInstance3D" parent="DoriHome" unique_id=649867309]
+[node name="Cube_051" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=649867309]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 3, 0.5, -11.8)
 mesh = SubResource("ArrayMesh_4cwds")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_051" unique_id=1416446898]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_051" unique_id=1416446898]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_051/StaticBody3D" unique_id=860531064]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_051/StaticBody3D" unique_id=860531064]
 shape = SubResource("ConcavePolygonShape3D_06g3o")
 
-[node name="Cube_052" type="MeshInstance3D" parent="DoriHome" unique_id=585661954]
+[node name="Cube_052" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=585661954]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 2.5, 0.5, -11.8)
 mesh = SubResource("ArrayMesh_48eyk")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_052" unique_id=1185271523]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_052" unique_id=1185271523]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_052/StaticBody3D" unique_id=1106387347]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_052/StaticBody3D" unique_id=1106387347]
 shape = SubResource("ConcavePolygonShape3D_1oftd")
 
-[node name="Plane_010" type="MeshInstance3D" parent="DoriHome" unique_id=148850777]
+[node name="Plane_010" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=148850777]
 transform = Transform3D(-100, -1.509958e-05, 1.3500313e-12, 0, 5.9604645e-06, 95.00001, -1.509958e-05, 100, -1.1324883e-05, -1.5, 0, -12)
 mesh = SubResource("ArrayMesh_wnrwt")
 
-[node name="Plane_011" type="MeshInstance3D" parent="DoriHome/Plane_010" unique_id=947316573]
+[node name="Plane_011" type="MeshInstance3D" parent="Node3D/DoriHome/Plane_010" unique_id=947316573]
 transform = Transform3D(1, 3.0199158e-07, -8.742278e-08, 3.0199158e-07, -1, -2.6400943e-14, 8.742278e-08, 0, 1, -0.0044999993, -0.00010000229, 0)
 mesh = SubResource("ArrayMesh_wdpjr")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Plane_010" unique_id=295940685]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Plane_010" unique_id=295940685]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Plane_010/StaticBody3D" unique_id=1735363902]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Plane_010/StaticBody3D" unique_id=1735363902]
 shape = SubResource("ConcavePolygonShape3D_bie7j")
 
-[node name="Plane_012" type="MeshInstance3D" parent="DoriHome" unique_id=1439057166]
+[node name="Plane_012" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1439057166]
 transform = Transform3D(-100, -1.509958e-05, 1.3500313e-12, 0, 5.9604645e-06, 95.00001, -1.509958e-05, 100, -1.1324883e-05, -1.5, 0, -12)
 mesh = SubResource("ArrayMesh_fh6lc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Plane_012" unique_id=16771524]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Plane_012" unique_id=16771524]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Plane_012/StaticBody3D" unique_id=1127056841]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Plane_012/StaticBody3D" unique_id=1127056841]
 shape = SubResource("ConcavePolygonShape3D_pnhvw")
 
-[node name="washbasin" type="MeshInstance3D" parent="DoriHome" unique_id=1052023335]
+[node name="washbasin" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1052023335]
 transform = Transform3D(-80, -3.115315e-05, 2.2737368e-12, 0, 4.7683716e-06, 80, -3.115315e-05, 80, -9.536743e-06, -1.8, 0, -9.7)
 mesh = SubResource("ArrayMesh_itaw2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/washbasin" unique_id=1079727136]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/washbasin" unique_id=1079727136]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/washbasin/StaticBody3D" unique_id=819380195]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/washbasin/StaticBody3D" unique_id=819380195]
 shape = SubResource("ConcavePolygonShape3D_vfeuj")
 
-[node name="Plane_013" type="MeshInstance3D" parent="DoriHome" unique_id=730687561]
+[node name="Plane_013" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=730687561]
 transform = Transform3D(2.9894445, 34.16948, -1.5333293e-05, -1.0222196e-06, 1.4311075e-05, 34.299995, 34.16948, -2.9894445, 0, -1.6299999, 1.12, -9.4)
 mesh = SubResource("ArrayMesh_71n1f")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Plane_013" unique_id=2101405703]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Plane_013" unique_id=2101405703]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Plane_013/StaticBody3D" unique_id=685760193]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Plane_013/StaticBody3D" unique_id=685760193]
 shape = SubResource("ConcavePolygonShape3D_mue4l")
 
-[node name="Cube_053" type="MeshInstance3D" parent="DoriHome" unique_id=1905159097]
+[node name="Cube_053" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1905159097]
 transform = Transform3D(-48, -1.8691891e-05, 1.364242e-12, 0, 2.861023e-06, 48, -1.8691891e-05, 48, -5.722046e-06, 0.1, 2.0696785, -9.498479)
 mesh = SubResource("ArrayMesh_g31rd")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_053" unique_id=1250754103]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_053" unique_id=1250754103]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_053/StaticBody3D" unique_id=335122745]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_053/StaticBody3D" unique_id=335122745]
 shape = SubResource("ConcavePolygonShape3D_38lwr")
 
-[node name="Cube_054" type="MeshInstance3D" parent="DoriHome" unique_id=964748498]
+[node name="Cube_054" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=964748498]
 transform = Transform3D(-48, -1.8691891e-05, 1.364242e-12, 0, 2.861023e-06, 48, -1.8691891e-05, 48, -5.722046e-06, 0.5, 1.1000001, -9.5)
 mesh = SubResource("ArrayMesh_y3wwi")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_054" unique_id=432801500]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_054" unique_id=432801500]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_054/StaticBody3D" unique_id=1103238586]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_054/StaticBody3D" unique_id=1103238586]
 shape = SubResource("ConcavePolygonShape3D_phr4b")
 
-[node name="Circle_010" type="MeshInstance3D" parent="DoriHome" unique_id=1035768740]
+[node name="Circle_010" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1035768740]
 transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, 0.95, 0, -9.629999)
 mesh = SubResource("ArrayMesh_hq051")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle_010" unique_id=1741123432]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle_010" unique_id=1741123432]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle_010/StaticBody3D" unique_id=677212726]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle_010/StaticBody3D" unique_id=677212726]
 shape = SubResource("ConcavePolygonShape3D_glb4p")
 
-[node name="Cube_055" type="MeshInstance3D" parent="DoriHome" unique_id=1795996676]
+[node name="Cube_055" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1795996676]
 transform = Transform3D(-100, 3.8941438e-05, -2.842171e-12, 0, 5.9604645e-06, 100, 3.8941438e-05, 100, -1.1920929e-05, 1, 1.48, -9.5)
 mesh = SubResource("ArrayMesh_dty7y")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Cube_055" unique_id=2057250345]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Cube_055" unique_id=2057250345]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Cube_055/StaticBody3D" unique_id=1301406812]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Cube_055/StaticBody3D" unique_id=1301406812]
 shape = SubResource("ConcavePolygonShape3D_adxeb")
 
-[node name="lightbulb" type="MeshInstance3D" parent="DoriHome" unique_id=973410261]
+[node name="lightbulb" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=973410261]
 transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, -0.7, 3, -0.10000001)
 visible = false
 mesh = SubResource("ArrayMesh_qh3k2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/lightbulb" unique_id=1486830864]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/lightbulb" unique_id=1486830864]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/lightbulb/StaticBody3D" unique_id=1339237103]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/lightbulb/StaticBody3D" unique_id=1339237103]
 shape = SubResource("ConcavePolygonShape3D_est7a")
 
-[node name="lightbulb_001" type="MeshInstance3D" parent="DoriHome" unique_id=1092881506]
+[node name="lightbulb_001" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1092881506]
 transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, 0.5000002, 3, -14)
 visible = false
 mesh = SubResource("ArrayMesh_ywg7f")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/lightbulb_001" unique_id=989068268]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/lightbulb_001" unique_id=989068268]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/lightbulb_001/StaticBody3D" unique_id=1331074604]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/lightbulb_001/StaticBody3D" unique_id=1331074604]
 shape = SubResource("ConcavePolygonShape3D_5t7vf")
 
-[node name="bulb2" type="MeshInstance3D" parent="DoriHome" unique_id=830237388]
+[node name="bulb2" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=830237388]
 transform = Transform3D(30.000002, 0, 0, 0, -3.576279e-06, 30, 0, -30, -3.576279e-06, -7, 3, -15)
 visible = false
 mesh = SubResource("ArrayMesh_f3h0q")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/bulb2" unique_id=1172730519]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/bulb2" unique_id=1172730519]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/bulb2/StaticBody3D" unique_id=198203366]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/bulb2/StaticBody3D" unique_id=198203366]
 shape = SubResource("ConcavePolygonShape3D_geu8g")
 
-[node name="Circle_011" type="MeshInstance3D" parent="DoriHome" unique_id=1309396615]
+[node name="Circle_011" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=1309396615]
 transform = Transform3D(-70, 7.958079e-12, -2.7259006e-05, 2.7259006e-05, 2.0861626e-05, -69.99999, -9.947598e-13, -69.99999, -1.66893e-05, 0.3, 3, -10.8)
 mesh = SubResource("ArrayMesh_uqske")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/Circle_011" unique_id=586654744]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/Circle_011" unique_id=586654744]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/Circle_011/StaticBody3D" unique_id=1821563294]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/Circle_011/StaticBody3D" unique_id=1821563294]
 shape = SubResource("ConcavePolygonShape3D_r27mp")
 
-[node name="techo" type="MeshInstance3D" parent="DoriHome" unique_id=522850708]
+[node name="techo" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=522850708]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
 mesh = SubResource("ArrayMesh_imhm2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/techo" unique_id=1309745961]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/techo" unique_id=1309745961]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/techo/StaticBody3D" unique_id=2103440584]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/techo/StaticBody3D" unique_id=2103440584]
 shape = SubResource("ConcavePolygonShape3D_o4hch")
 
-[node name="wall" type="MeshInstance3D" parent="DoriHome" unique_id=309358808]
+[node name="wall" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=309358808]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
 mesh = SubResource("ArrayMesh_a3rp7")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/wall" unique_id=1167303997]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/wall" unique_id=1167303997]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/wall/StaticBody3D" unique_id=561080757]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/wall/StaticBody3D" unique_id=561080757]
 shape = SubResource("ConcavePolygonShape3D_c41mx")
 
-[node name="floor" type="MeshInstance3D" parent="DoriHome" unique_id=429000037]
+[node name="floor" type="MeshInstance3D" parent="Node3D/DoriHome" unique_id=429000037]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
 mesh = SubResource("ArrayMesh_p8w5x")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DoriHome/floor" unique_id=2024270906]
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoriHome/floor" unique_id=2024270906]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoriHome/floor/StaticBody3D" unique_id=1017845520]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoriHome/floor/StaticBody3D" unique_id=1017845520]
 shape = SubResource("ConcavePolygonShape3D_emkjg")
 
-[node name="playerChild" parent="." unique_id=1655996281 instance=ExtResource("17_lq38n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5248837, 1.454814, 0.27567816)
+[node name="playerAdult" parent="." unique_id=1655996281 instance=ExtResource("2_exavd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.134048, 5.7994804, -1.162539)
+
+[connection signal="body_entered" from="Node3D/DoriHome/Bed/Area3D" to="Node3D/DoriHome/Bed" method="_on_area_3d_body_entered"]

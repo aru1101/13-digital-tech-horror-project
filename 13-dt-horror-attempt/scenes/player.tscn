@@ -43,9 +43,16 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.9983748, 0.056989037, 0, -0.056989037, 0.9983748, 0, 0.3779359, -0.038609505)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="head/Camera3D" unique_id=1333003423]
+visible = false
 shadow_enabled = true
 spot_range = 6.0
 spot_angle = 35.0
+
+[node name="InteractionRay" type="RayCast3D" parent="head/Camera3D" unique_id=1936572300]
+target_position = Vector3(0, 0, -3)
+collision_mask = 2
+collide_with_areas = true
+collide_with_bodies = false
 
 [node name="FootstepAudio3D" type="AudioStreamPlayer3D" parent="." unique_id=1983410716]
 unique_name_in_owner = true
@@ -53,3 +60,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8636656, 0)
 stream = SubResource("AudioStreamRandomizer_3vyb7")
 volume_db = 0.784
 pitch_scale = 0.66
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=59838367]
+
+[node name="label" type="Label" parent="CanvasLayer" unique_id=370789667]
+offset_top = 227.0
+offset_right = 1153.0
+offset_bottom = 553.0
+text = "Press E to interact"
+horizontal_alignment = 1
+vertical_alignment = 2

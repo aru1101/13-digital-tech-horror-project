@@ -43,9 +43,15 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.9983748, 0.056989037, 0, -0.056989037, 0.9983748, 0, 0.3779359, -0.038609505)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="head/Camera3D" unique_id=1333003423]
+light_energy = 0.8
 shadow_enabled = true
-spot_range = 6.0
 spot_angle = 35.0
+
+[node name="InteractionRay" type="RayCast3D" parent="head/Camera3D" unique_id=826373253]
+target_position = Vector3(0, 0, -3)
+collision_mask = 2
+collide_with_areas = true
+collide_with_bodies = false
 
 [node name="FootstepAudio3D" type="AudioStreamPlayer3D" parent="." unique_id=1983410716]
 unique_name_in_owner = true
