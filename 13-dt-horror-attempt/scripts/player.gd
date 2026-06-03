@@ -6,6 +6,7 @@ const SPEED = 2.5
 const JUMP_VELOCITY = 4.5
 
 var mouse_sensitivity = 0.002
+var is_interacting = false
 
 @onready var interaction_ray = $head/Camera3D/InteractionRay
 @onready var interaction_label = $CanvasLayer/label
@@ -29,10 +30,16 @@ func _input(event):
 		var object_root = hit_collider.get_parent()
 		if object_root.has_method("interact") and event.is_action_pressed("interact"):
 			object_root.interact()
-		if interaction_ray.is_colliding() and object_root.has_method("interact"):
+			print("interacted")
+		if object_root.has_method("interact"):
 			interaction_label.show()
-		elif interaction_ray.is_colliding() or ! interaction_ray.is_colliding() and ! object_root.has_method("interact"):
-			interaction_label.hide()
+			is_interacting = true
+	else:
+		is_interacting = false
+
+func _process(_delta):
+	if is_interacting == false:
+		interaction_label.hide()
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

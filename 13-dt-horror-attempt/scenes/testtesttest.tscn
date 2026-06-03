@@ -24,7 +24,7 @@
 sky_material = SubResource("ProceduralSkyMaterial_lq38n")
 
 [sub_resource type="Environment" id="Environment_ywv5p"]
-background_energy_multiplier = 0.0
+background_energy_multiplier = 0.06
 sky = SubResource("Sky_1nlxc")
 volumetric_fog_density = 0.008
 

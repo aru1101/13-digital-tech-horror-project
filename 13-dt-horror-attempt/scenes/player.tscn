@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://bdkw2our46235" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 09_AUDIOELK_NONE.wav" id="4_smehm"]
 [ext_resource type="AudioStream" uid="uid://duscs2s05slls" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 12_AUDIOELK_NONE.wav" id="5_ur7pv"]
 [ext_resource type="AudioStream" uid="uid://dobbeuhd3tvyi" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 15_AUDIOELK_NONE.wav" id="6_y4r1p"]
+[ext_resource type="Texture2D" uid="uid://dbsdj2moinva5" path="res://assets/images/Aarav.png" id="7_fjrip"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u8vuu"]
 radius = 0.18310547
@@ -64,9 +65,15 @@ pitch_scale = 0.66
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=59838367]
 
 [node name="label" type="Label" parent="CanvasLayer" unique_id=370789667]
-offset_top = 227.0
-offset_right = 1153.0
-offset_bottom = 553.0
+offset_left = 3.0
+offset_top = 205.0
+offset_right = 1156.0
+offset_bottom = 531.0
 text = "Press E to interact"
 horizontal_alignment = 1
 vertical_alignment = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=855103218]
+position = Vector2(578, 328.00003)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("7_fjrip")
