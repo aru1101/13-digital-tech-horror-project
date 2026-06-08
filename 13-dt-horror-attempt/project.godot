@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="13dt-horror-attempt"
+config/name="blur"
 run/main_scene="uid://d3kajko7k5vsk"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
