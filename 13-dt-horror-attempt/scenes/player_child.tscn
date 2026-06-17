@@ -43,9 +43,16 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.9983748, 0.056989037, 0, -0.056989037, 0.9983748, 0, 0.3779359, -0.038609505)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="head/Camera3D" unique_id=1333003423]
-light_energy = 0.8
+light_energy = 0.85
 shadow_enabled = true
+spot_range = 5.5
 spot_angle = 35.0
+spot_angle_attenuation = 3.7321332
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="head/Camera3D" unique_id=1141910369]
+light_energy = 0.15
+spot_range = 2.5
+spot_angle = 60.0
 
 [node name="InteractionRay" type="RayCast3D" parent="head/Camera3D" unique_id=826373253]
 target_position = Vector3(0, 0, -3)

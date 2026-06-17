@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c1aad0qva6cp1"]
+
+[ext_resource type="PackedScene" uid="uid://sulxk0el658i" path="res://scenes/house.tscn" id="1_ala07"]
+[ext_resource type="LightmapGIData" uid="uid://c82qiud8u1e7p" path="res://scenes/doortitle.lmbake" id="2_s1uvv"]
+
+[sub_resource type="Environment" id="Environment_s1uvv"]
+background_mode = 2
+background_energy_multiplier = 0.0
+
+[node name="Node3D" type="Node3D" unique_id=1699244516]
+
+[node name="Node3D" parent="." unique_id=2093515504 instance=ExtResource("1_ala07")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0061438084, 0, 0.0349195)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=159834618]
+environment = SubResource("Environment_s1uvv")
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1677281960]
+light_data = ExtResource("2_s1uvv")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1098527920]
+transform = Transform3D(0.058568683, 0.60291564, 0.7956522, 0.044261415, -0.79780495, 0.6012888, 0.9973017, 0, -0.073412284, -2.7196498, 1.987173, -5.522607)
+visible = false
+shadow_enabled = true
+sky_mode = 1
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1834321471]
+transform = Transform3D(-0.0011049381, 0.99064815, 0.13643737, -0.008022498, -0.13644183, 0.9906157, 0.99996716, 8.4428506e-11, 0.008098232, -2.6715932, 2.1054094, -5.4718695)

@@ -26,6 +26,7 @@ func _input(event):
 		$head/Camera3D.rotation.x = clampf($head/Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
 	#if event.is_action_pressed("interact"):
 	if interaction_ray.is_colliding():
+		print("hello")
 		var hit_collider = interaction_ray.get_collider()
 		var object_root = hit_collider.get_parent()
 		if object_root.has_method("interact") and event.is_action_pressed("interact"):
@@ -40,6 +41,7 @@ func _input(event):
 func _process(_delta):
 	if is_interacting == false:
 		interaction_label.hide()
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

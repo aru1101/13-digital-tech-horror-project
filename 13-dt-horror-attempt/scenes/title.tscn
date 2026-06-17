@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://bdxbnr0ka65kt"]
+
+[sub_resource type="Animation" id="Animation_pvspv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(15.23, 3, 19.64)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.44331363, -5.466371, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4ignj"]
+resource_name = "load"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5.02, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(15.23, 3, 19.64), Vector3(3.4, 3, 13.525), Vector3(-0.335, -1.345, 8.405)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 5.02, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(-0.44331363, -5.466371, 0), Vector3(-0.60039324, -6.0772367, 0), Vector3(-0.050614547, -6.286676, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wosw1"]
+_data = {
+&"RESET": SubResource("Animation_pvspv"),
+&"load": SubResource("Animation_4ignj")
+}
+
+[node name="title screen" type="Node3D" unique_id=1246903952]
+
+[node name="assets" type="Node3D" parent="." unique_id=2086415527]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="assets" unique_id=1321884925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.9897346, 0)
+size = Vector3(50, 0.1, 50)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="assets" unique_id=1872333171]
+transform = Transform3D(1.0076333, 0, 0, 0, 1.1484702, 0, 0, 0, 1.0076333, 0.14620866, -2.503916, 0)
+size = Vector3(9.817993, 4, 8)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="assets" unique_id=199129267]
+transform = Transform3D(1, 0, 0, 0, 2.5821445, 0, 0, 0, 1, -8.777585, -1.3338952, 0)
+size = Vector3(1, 1.3178711, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="assets/CSGBox3D3" unique_id=307562385]
+transform = Transform3D(3.0985575, 0, 0, 0, 0.6807182, 0, 0, 0, 3.4948444, 0.018118858, 0.91537374, 0)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="assets" unique_id=1752510130]
+transform = Transform3D(1, 0, 0, 0, 2.5821445, 0, 0, 0, 1, 10.049981, -1.3338952, 0)
+size = Vector3(1, 1.3178711, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="assets/CSGBox3D4" unique_id=345457831]
+transform = Transform3D(3.0985575, 0, 0, 0, 0.6807182, 0, 0, 0, 3.4948444, 0.018118858, 0.91537374, 0)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="assets" unique_id=300023493]
+transform = Transform3D(1, 0, 0, 0, 2.5821445, 0, 0, 0, 1, 10.049981, -1.3338952, 9.33412)
+size = Vector3(1, 1.3178711, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="assets/CSGBox3D5" unique_id=115956805]
+transform = Transform3D(3.0985575, 0, 0, 0, 0.6807182, 0, 0, 0, 3.4948444, 0.018118858, 0.91537374, 0)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="assets" unique_id=1387317431]
+transform = Transform3D(1, 0, 0, 0, 2.5821445, 0, 0, 0, 1, -4.129983, -1.3338952, 10.986)
+size = Vector3(1, 1.3178711, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="assets/CSGBox3D6" unique_id=59095333]
+transform = Transform3D(3.0985575, 0, 0, 0, 0.6807182, 0, 0, 0, 3.4948444, 0.018118858, 0.91537374, 0)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="assets" unique_id=356612711]
+transform = Transform3D(1, 0, 0, 0, 2.5821445, 0, 0, 0, 1, -11.013578, -1.3338952, 7.6295853)
+size = Vector3(1, 1.3178711, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="assets/CSGBox3D7" unique_id=1160287658]
+transform = Transform3D(3.0985575, 0, 0, 0, 0.6807182, 0, 0, 0, 3.4948444, 0.018118858, 0.91537374, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1989458788]
+transform = Transform3D(0.684547, -0.3126803, 0.6585032, 0, 0.9033353, 0.42893514, -0.72896874, -0.29362628, 0.6183755, 15.23, 3, 19.64)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=334636206]
+libraries/ = SubResource("AnimationLibrary_wosw1")
