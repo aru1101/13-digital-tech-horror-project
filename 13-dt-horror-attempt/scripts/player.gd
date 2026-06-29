@@ -73,6 +73,7 @@ func _physics_process(delta: float) -> void:
 	footstep_landed = is_on_floor()
 
 
+@warning_ignore("shadowed_variable")
 func headbob(headbob_time):
 	var headbob_position = Vector3.ZERO
 	headbob_position.y = sin(headbob_time * headbob_frequency) * headbob_ampltiude
