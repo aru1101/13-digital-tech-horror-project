@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="blur"
-run/main_scene="uid://d3kajko7k5vsk"
+run/main_scene="uid://c1aad0qva6cp1"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

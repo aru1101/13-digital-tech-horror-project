@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cpa14d2emwxxv"]
+
+[ext_resource type="Texture2D" uid="uid://bmqqjgn2g2trx" path="res://assets/models/DoriHome_6.png" id="1_7mp3x"]
+
+[resource]
+resource_name = "wood3"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_7mp3x")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0

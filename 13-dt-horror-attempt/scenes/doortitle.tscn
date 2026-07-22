@@ -10,11 +10,20 @@
 [ext_resource type="Texture2D" uid="uid://cikg4pl24n5u2" path="res://assets/images/newgame.png" id="8_hdacd"]
 [ext_resource type="Script" uid="uid://d2muverkvri47" path="res://scenes/mainlight.gd" id="8_pjn8d"]
 [ext_resource type="FontFile" uid="uid://bg3thx6d8t6cm" path="res://assets/fonts/bakemono_stereo/Bakemono-Stereo-Bold-trial.ttf" id="9_sfrtu"]
+[ext_resource type="Script" uid="uid://bbsb5wseq826p" path="res://scenes/button.gd" id="10_xilf2"]
 [ext_resource type="Script" uid="uid://bg4mogpevrlwr" path="res://scenes/swaylamp.gd" id="11_8gqun"]
 [ext_resource type="Texture2D" uid="uid://i3jyeosn1g4f" path="res://assets/models/hanging_industrial_lamp_4k.blend/textures/hanging_industrial_lamp_diff_4k.jpg" id="11_u1130"]
 [ext_resource type="Texture2D" uid="uid://c2jl7qevcve7t" path="res://assets/images/pngegg.png" id="11_yu3fs"]
 [ext_resource type="Texture2D" uid="uid://c8i5cxt86sv27" path="res://assets/models/hanging_industrial_lamp_4k.blend/textures/hanging_industrial_lamp_emissive_4k.png" id="12_8gqun"]
+[ext_resource type="AudioStream" uid="uid://chjl6kkfch4ly" path="res://assets/sounds/door/freesound_community-door-open-86191.mp3" id="13_n6ljl"]
 [ext_resource type="Texture2D" uid="uid://d0ug84767ak3k" path="res://assets/models/hanging_industrial_lamp_4k.blend/textures/hanging_industrial_lamp_glass_nor_gl_4k.png" id="13_pjn8d"]
+[ext_resource type="AudioStream" uid="uid://cob65053u1sl6" path="res://assets/sounds/ambient/title.mp3" id="17_tclur"]
+[ext_resource type="AudioStream" uid="uid://bbbmwekth835o" path="res://assets/sounds/sudden/freesound_community-breathe-95275.mp3" id="18_8f5w8"]
+[ext_resource type="AudioStream" uid="uid://dadooaccnwkbu" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 05_AUDIOELK_NONE.wav" id="19_0qbkv"]
+[ext_resource type="AudioStream" uid="uid://d0sjghok7nwtg" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 06_AUDIOELK_NONE.wav" id="20_n6ljl"]
+[ext_resource type="AudioStream" uid="uid://bdkw2our46235" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 09_AUDIOELK_NONE.wav" id="21_c6h13"]
+[ext_resource type="AudioStream" uid="uid://duscs2s05slls" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 12_AUDIOELK_NONE.wav" id="22_0sxr0"]
+[ext_resource type="AudioStream" uid="uid://dobbeuhd3tvyi" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 15_AUDIOELK_NONE.wav" id="23_2tnxp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1dybs"]
 resource_name = "concrete"
@@ -280,11 +289,14 @@ data = PackedVector3Array(0.0050999997, -0.0002, 0.02, 0.0050999997, -0.0002, 0.
 [sub_resource type="Environment" id="Environment_s1uvv"]
 background_mode = 2
 background_energy_multiplier = 0.0
-fog_enabled = true
 fog_light_energy = 0.0
-volumetric_fog_density = 0.025
-volumetric_fog_length = 0.01
-volumetric_fog_detail_spread = 1.0606605
+volumetric_fog_length = 3.0
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_pjn8d"]
+auto_exposure_enabled = true
+auto_exposure_scale = 0.01
+dof_blur_far_enabled = true
+dof_blur_far_distance = 3.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_reopc"]
 resource_name = "Red door"
@@ -1882,7 +1894,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("uploads_files_2182808_RED+DOOR/Red door:position")
+tracks/0/path = NodePath("dooar/Red door:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -1894,7 +1906,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("uploads_files_2182808_RED+DOOR/Red door:rotation")
+tracks/1/path = NodePath("dooar/Red door:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -1939,33 +1951,45 @@ tracks/4/keys = {
 "update": 0,
 "values": [57.0]
 }
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/ColorRect:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_xilf2"]
 resource_name = "door open"
-length = 3.0
+length = 4.4333334
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("uploads_files_2182808_RED+DOOR/Red door:position")
+tracks/0/path = NodePath("dooar/Red door:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 1.01, 2, 3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 1, 1.01, 2, 3, 4.4333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector3(-7.6293944e-08, 1.2406634, 3.051758e-08), Vector3(0.215, 1.241, 0.055), Vector3(0.216, 1.241, 0.051), Vector3(0.31, 1.241, 0.15), Vector3(0.31, 1.241, 0.3)]
+"values": [Vector3(-7.6293944e-08, 1.2406634, 3.051758e-08), Vector3(0.215, 1.241, 0.055), Vector3(0.216, 1.241, 0.051), Vector3(0.31, 1.241, 0.15), Vector3(0.31, 1.241, 0.3), Vector3(0.31, 1.241, 0.415)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("uploads_files_2182808_RED+DOOR/Red door:rotation")
+tracks/1/path = NodePath("dooar/Red door:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1, 1.01, 2, 3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 1, 1.01, 2, 3, 4.4333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector3(-1.5707964, 0, 0), Vector3(-1.5707964, -0.2919063, 0), Vector3(-1.5707964, -0.29547516, 0), Vector3(-1.5707964, -0.6487912, 0), Vector3(-1.5707964, -0.9923766, 0)]
+"values": [Vector3(-1.5707964, 0, 0), Vector3(-1.5707964, -0.2919063, 0), Vector3(-1.5707964, -0.29547516, 0), Vector3(-1.5707964, -0.6487912, 0), Vector3(-1.5707964, -0.9923766, 0), Vector3(-1.5707964, -1.3416171, 0)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -1974,7 +1998,7 @@ tracks/2/path = NodePath("Camera3D:position")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 3),
+"times": PackedFloat32Array(2, 4.4),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(-1.709, 2.004, -6.314), Vector3(-1.114, 2.004, -6.314)]
@@ -1986,10 +2010,10 @@ tracks/3/path = NodePath("Camera3D:rotation")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 1.5, 3),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(2, 4.4),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(-0.20245819, -1.5707964, 0), Vector3(-0.20245819, -1.5707964, 0), Vector3(-0.21991149, -1.5707964, 0)]
+"values": [Vector3(-0.20245819, -1.5707964, 0), Vector3(-0.21991149, -1.5707964, 0)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -1998,10 +2022,22 @@ tracks/4/path = NodePath("Camera3D:fov")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 1.5, 3),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(1.1, 4.4),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [57.0, 50.6, 43.1]
+"values": [57.0, 43.1]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/ColorRect:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(2.2, 4.4333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tclur"]
@@ -2009,6 +2045,18 @@ _data = {
 &"RESET": SubResource("Animation_pjn8d"),
 &"door open": SubResource("Animation_xilf2")
 }
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_kx7ob"]
+random_pitch = 1.0717734
+streams_count = 5
+stream_0/stream = ExtResource("19_0qbkv")
+stream_1/stream = ExtResource("20_n6ljl")
+stream_2/stream = ExtResource("21_c6h13")
+stream_3/stream = ExtResource("22_0sxr0")
+stream_4/stream = ExtResource("23_2tnxp")
+
+[sub_resource type="AudioStreamMP3" id="AudioStreamMP3_0qbkv"]
+data = PackedByteArray("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mAL5iO5ClNFdLdVedR/Hqh6LZYFIsSZYrZJTzyQHFYOQ1mX4fQjj5blSulFDVqnvBfuTBqIqqvo+n75gYbMjk9ezgTQeoDPExaR4QccEBvyp5bVYvGjR13l/DiPntqLh7iBh/A1EbJBNRE0Rps3H3HXG4tXqpniYtPNjMFsfXa70gMDyIJCFajYm9sVMy5eKAFkg+DT8PdwxwA4JlLOVSrCgQMCgGCAWiLJGCAWiTGUGZdDuGpVDzXmHLGcp2XJdlyX9f2M0t74lpiVSaSRJMQbCMEw/EpdHb3j5MOx0SjI6JRJLK1apd2YHUp6tPTk5OSSdPWXR378wyPlxk0fLlTPbX4Fy55kxMSSemK1bLX22YVq2FcuXPWXWajhpa3tLns1ati2drSbsu1ZWregXLl3vQLl48ZjDAQplCz9mMKAgJF/wzLokBXAjCgCAwABmx6nBlqYwDQcQlQv1GIWnKkMishKVMicmEQonRcosTUd6wwi3EGNFCUNQ06VChqtiSxbXYTRNFDVacyHKJXJ45nJ9L10aSifHUhyHCxIaX1QvVtmrrbctWnJitPXWjKOs2aMnzoyXGQlGUcwUmWntXLkx7V2ZZP/70kSbAAXYaUDDLB3yx81XlnHsbhilpt4HsTHDArPamMexAfYYsgPoarTla6PROPlxkdH34OJZTHz37zVaxT21qtlvmTkmrTE5XLj5cfHQ5ASN/YPjJdbLQU+vTZcueZWnrLvTNXq1dgqtMVvzi5daAFUDGPU4VMhS5Q05lFt7FhJ4nSqfHMLcJsAZe4fFUyEpUcmMVoXVqQBQAQVCEIycsjyAVQ+Yl4nNklsmwEECJZgeaHEmrSSiJR9hkmfWsCETt7SUJS4lKiSYiCJJk3FCepl3iFtCkTKsEQWBIUqEy7iImRLkQWBIEiZclRCF8GioVBEzoCoxS7oVBVOAVFKFJsUoQqS6QgiSlnqkIIhY0rAVJoA0MoyWMSFwqTZIm0Nb42KZskIZZjFnkRpCkTKsCpOaFJ8EQApAcTRUEoDTgEgbCEEompwkoSicXSa4YnANhKBIdkpiiOYnjFgQic2epTFacmLtmxBMjI++To+sdO2aOhKVNRgVA8Ix8dH1UxkSjFxdGcnq2h0TXVtTlYTm+ll2vHS8RTgxdnDqM5iJRiYj0B4tYIRaOnBCPmVqZ89HI4LW6csCUjJKo5itNmrNMkmJcdHz1nmi6JK0xd2pyuMnrMsGRkfcdH1rW+g5Hta1rWtTm7rS61rWaOTExMWCUJROeBcaTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq")
 
 [node name="Node3D" type="Node3D" unique_id=1699244516]
 script = ExtResource("1_fbatb")
@@ -2114,7 +2162,7 @@ spot_angle = 80.0
 [node name="OmniLight3D" type="OmniLight3D" parent="lighting" unique_id=1122287967]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.500206, 1.6176139, -6.261097)
 light_color = Color(0.6012614, 2.0214916e-06, 4.3317675e-07, 1)
-light_energy = 0.1
+light_energy = 0.15
 light_negative = true
 shadow_enabled = true
 distance_fade_begin = 1.0
@@ -2131,6 +2179,7 @@ spot_angle = 60.0
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=314728410]
 transform = Transform3D(-4.371139e-08, 0.20107792, -0.9795753, 0, 0.9795753, 0.20107792, 1, 8.789395e-09, -4.2818595e-08, -1.709, 2.004, -6.314)
+attributes = SubResource("CameraAttributesPractical_pjn8d")
 fov = 57.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=648357849]
@@ -2144,6 +2193,7 @@ offset_bottom = 218.0
 icon = ExtResource("8_hdacd")
 icon_alignment = 1
 expand_icon = true
+script = ExtResource("10_xilf2")
 
 [node name="Label" type="Label" parent="CanvasLayer" unique_id=1453395645]
 offset_left = 4.999999
@@ -2162,187 +2212,201 @@ position = Vector2(62.5, 33)
 scale = Vector2(0.060541924, 0.025)
 texture = ExtResource("11_yu3fs")
 
-[node name="uploads_files_2182808_RED+DOOR" type="Node3D" parent="." unique_id=1013219737]
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=74992673]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="dooar" type="Node3D" parent="." unique_id=1013219737]
 transform = Transform3D(1, 0, 8.339398e-16, 0, 1, 0, 8.339398e-16, 0, 1, 2.073, -0.00999999, -6.27)
 
-[node name="frame" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR" unique_id=1254824133]
+[node name="frame" type="MeshInstance3D" parent="dooar" unique_id=1254824133]
 transform = Transform3D(0.1, 0, 0, 0, -1.1920929e-08, 0.099999994, 0, -0.099999994, -1.1920929e-08, -0.101552606, 1.2497847, 0)
 mesh = SubResource("ArrayMesh_1txrm")
 
-[node name="Red door" type="Node3D" parent="uploads_files_2182808_RED+DOOR" unique_id=443482880]
-transform = Transform3D(0.099999994, 0, 0, 0, -4.3711386e-09, 0.099999994, 0, -0.099999994, -4.3711386e-09, -7.6293944e-08, 1.2406634, 3.051758e-08)
+[node name="Red door" type="Node3D" parent="dooar" unique_id=443482880]
+transform = Transform3D(0.1, 0, 0, 0, -4.371139e-09, 0.10000001, 0, -0.1, -4.371139e-09, -7.6293944e-08, 1.2406634, 3.051758e-08)
 
-[node name="Box034" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1561925719]
+[node name="Box034" type="MeshInstance3D" parent="dooar/Red door" unique_id=1561925719]
 transform = Transform3D(1, 1.7484554e-07, -3.0570964e-14, -1.7484554e-07, 1, -1.7484554e-07, 0, 1.7484554e-07, 1, 1.4286067, 5.549612e-07, 0.09121094)
 mesh = SubResource("ArrayMesh_du6mh")
 
-[node name="Line195" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1207562988]
+[node name="Line195" type="MeshInstance3D" parent="dooar/Red door" unique_id=1207562988]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.0069679557, 8.453252)
 mesh = SubResource("ArrayMesh_vf1je")
 
-[node name="Line196" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=678431948]
+[node name="Line196" type="MeshInstance3D" parent="dooar/Red door" unique_id=678431948]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.006963073, 4.9112744)
 mesh = SubResource("ArrayMesh_4ukhy")
 
-[node name="Line197" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1311485339]
+[node name="Line197" type="MeshInstance3D" parent="dooar/Red door" unique_id=1311485339]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.006963073, 6.6821094)
 mesh = SubResource("ArrayMesh_trhtd")
 
-[node name="Line198" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1331215184]
+[node name="Line198" type="MeshInstance3D" parent="dooar/Red door" unique_id=1331215184]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.006963073, 1.3703662)
 mesh = SubResource("ArrayMesh_qk0qm")
 
-[node name="Line199" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=978510693]
+[node name="Line199" type="MeshInstance3D" parent="dooar/Red door" unique_id=978510693]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.006963073, 3.141206)
 mesh = SubResource("ArrayMesh_rjxha")
 
-[node name="Line200" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1944281793]
+[node name="Line200" type="MeshInstance3D" parent="dooar/Red door" unique_id=1944281793]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.006963073, -2.170722)
 mesh = SubResource("ArrayMesh_mkfl1")
 
-[node name="Line201" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=3182344]
+[node name="Line201" type="MeshInstance3D" parent="dooar/Red door" unique_id=3182344]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.006963073, -0.39988527)
 mesh = SubResource("ArrayMesh_qji07")
 
-[node name="Line202" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1271794231]
+[node name="Line202" type="MeshInstance3D" parent="dooar/Red door" unique_id=1271794231]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.006963073, -5.71199)
 mesh = SubResource("ArrayMesh_riarn")
 
-[node name="Line203" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=2140112557]
+[node name="Line203" type="MeshInstance3D" parent="dooar/Red door" unique_id=2140112557]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.006963073, -3.9411547)
 mesh = SubResource("ArrayMesh_bukhy")
 
-[node name="Line204" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1337527246]
+[node name="Line204" type="MeshInstance3D" parent="dooar/Red door" unique_id=1337527246]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.006963073, -9.253075)
 mesh = SubResource("ArrayMesh_enf72")
 
-[node name="Line205" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1080956713]
+[node name="Line205" type="MeshInstance3D" parent="dooar/Red door" unique_id=1080956713]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.006963073, -7.48224)
 mesh = SubResource("ArrayMesh_li07o")
 
-[node name="Line206" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1435260702]
+[node name="Line206" type="MeshInstance3D" parent="dooar/Red door" unique_id=1435260702]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.0069679557, 10.627512)
 mesh = SubResource("ArrayMesh_ojn1m")
 
-[node name="Line207" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=999340087]
+[node name="Line207" type="MeshInstance3D" parent="dooar/Red door" unique_id=999340087]
 transform = Transform3D(1, 1.7484554e-07, 3.0570964e-14, -1.7484554e-07, 1, 1.7484554e-07, 0, -1.7484554e-07, 1, -0.7064877, -3.864667, -0.550354)
 mesh = SubResource("ArrayMesh_788nl")
 
-[node name="Line208" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=261208931]
+[node name="Line208" type="MeshInstance3D" parent="dooar/Red door" unique_id=261208931]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70541495, 3.8785648, -0.55137694)
 mesh = SubResource("ArrayMesh_rj8tu")
 
-[node name="Line209" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=686128514]
+[node name="Line209" type="MeshInstance3D" parent="dooar/Red door" unique_id=686128514]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70598066, 0.0069679557, -11.57924)
 mesh = SubResource("ArrayMesh_vsuhp")
 
-[node name="Line210" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=148588285]
+[node name="Line210" type="MeshInstance3D" parent="dooar/Red door" unique_id=148588285]
 transform = Transform3D(1, 0, 0, 0, 1, 1.7484554e-07, 0, -1.7484554e-07, 1, 0.20655593, 0.00045932567, -0.30560791)
 mesh = SubResource("ArrayMesh_j62sm")
 
-[node name="Rectangle2051" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1024308345]
+[node name="Rectangle2051" type="MeshInstance3D" parent="dooar/Red door" unique_id=1024308345]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7116402, 1.7579056, -9.253368)
 mesh = SubResource("ArrayMesh_y1qrq")
 
-[node name="Rectangle2052" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=644174837]
+[node name="Rectangle2052" type="MeshInstance3D" parent="dooar/Red door" unique_id=644174837]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7108686, 1.7523586, -9.253368)
 mesh = SubResource("ArrayMesh_w5ybl")
 
-[node name="Rectangle2059" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1640991501]
+[node name="Rectangle2059" type="MeshInstance3D" parent="dooar/Red door" unique_id=1640991501]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.710868, -1.792451, -5.7122827)
 mesh = SubResource("ArrayMesh_mfcvg")
 
-[node name="Rectangle2060" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=938571350]
+[node name="Rectangle2060" type="MeshInstance3D" parent="dooar/Red door" unique_id=938571350]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7116402, 1.7579056, -2.1710143)
 mesh = SubResource("ArrayMesh_lwidi")
 
-[node name="Rectangle2061" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1276199344]
+[node name="Rectangle2061" type="MeshInstance3D" parent="dooar/Red door" unique_id=1276199344]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7108686, 1.7523586, -2.1710143)
 mesh = SubResource("ArrayMesh_g03oy")
 
-[node name="Rectangle2062" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=485769162]
+[node name="Rectangle2062" type="MeshInstance3D" parent="dooar/Red door" unique_id=485769162]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7116396, -1.7869041, -2.1710143)
 mesh = SubResource("ArrayMesh_c70an")
 
-[node name="Rectangle2063" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1141057683]
+[node name="Rectangle2063" type="MeshInstance3D" parent="dooar/Red door" unique_id=1141057683]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.710868, -1.792451, -2.1710143)
 mesh = SubResource("ArrayMesh_ujc6f")
 
-[node name="Rectangle2064" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1394772594]
+[node name="Rectangle2064" type="MeshInstance3D" parent="dooar/Red door" unique_id=1394772594]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7116402, 1.7579056, 1.3700732)
 mesh = SubResource("ArrayMesh_65x57")
 
-[node name="Rectangle2065" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=596831329]
+[node name="Rectangle2065" type="MeshInstance3D" parent="dooar/Red door" unique_id=596831329]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7108686, 1.7523586, 1.3700732)
 mesh = SubResource("ArrayMesh_l4lj5")
 
-[node name="Rectangle2066" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=474352123]
+[node name="Rectangle2066" type="MeshInstance3D" parent="dooar/Red door" unique_id=474352123]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7116396, -1.7869041, 1.3700732)
 mesh = SubResource("ArrayMesh_ffrlm")
 
-[node name="Rectangle2067" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=436970774]
+[node name="Rectangle2067" type="MeshInstance3D" parent="dooar/Red door" unique_id=436970774]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.710868, -1.792451, 1.3700732)
 mesh = SubResource("ArrayMesh_fv04q")
 
-[node name="Rectangle2068" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=849189542]
+[node name="Rectangle2068" type="MeshInstance3D" parent="dooar/Red door" unique_id=849189542]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7116402, 1.7579056, 4.9109817)
 mesh = SubResource("ArrayMesh_ml0jy")
 
-[node name="Rectangle2069" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=658400489]
+[node name="Rectangle2069" type="MeshInstance3D" parent="dooar/Red door" unique_id=658400489]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7108686, 1.7523586, 4.9109817)
 mesh = SubResource("ArrayMesh_d1yj7")
 
-[node name="Rectangle2070" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1784138649]
+[node name="Rectangle2070" type="MeshInstance3D" parent="dooar/Red door" unique_id=1784138649]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7116396, -1.7869041, 4.9109817)
 mesh = SubResource("ArrayMesh_hfsof")
 
-[node name="Rectangle2071" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1293547314]
+[node name="Rectangle2071" type="MeshInstance3D" parent="dooar/Red door" unique_id=1293547314]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.710868, -1.792451, 4.9109817)
 mesh = SubResource("ArrayMesh_khbr6")
 
-[node name="Rectangle2072" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=379650208]
+[node name="Rectangle2072" type="MeshInstance3D" parent="dooar/Red door" unique_id=379650208]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7116426, 1.7579056, 8.452959)
 mesh = SubResource("ArrayMesh_81w77")
 
-[node name="Rectangle2073" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=596089576]
+[node name="Rectangle2073" type="MeshInstance3D" parent="dooar/Red door" unique_id=596089576]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7108686, 1.7523586, 8.452959)
 mesh = SubResource("ArrayMesh_afw44")
 
-[node name="Rectangle2074" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=406668869]
+[node name="Rectangle2074" type="MeshInstance3D" parent="dooar/Red door" unique_id=406668869]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.711642, -1.7869041, 8.452959)
 mesh = SubResource("ArrayMesh_7mro1")
 
-[node name="Rectangle2075" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1880682443]
+[node name="Rectangle2075" type="MeshInstance3D" parent="dooar/Red door" unique_id=1880682443]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.710868, -1.792451, 8.452959)
 mesh = SubResource("ArrayMesh_tycl2")
 
-[node name="Rectangle3118" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=452704010]
+[node name="Rectangle3118" type="MeshInstance3D" parent="dooar/Red door" unique_id=452704010]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7116396, -1.7869041, -5.7122827)
 mesh = SubResource("ArrayMesh_6vars")
 
-[node name="Rectangle3119" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1575068877]
+[node name="Rectangle3119" type="MeshInstance3D" parent="dooar/Red door" unique_id=1575068877]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7108686, 1.7523586, -5.7122827)
 mesh = SubResource("ArrayMesh_pi2lg")
 
-[node name="Rectangle3120" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=67842221]
+[node name="Rectangle3120" type="MeshInstance3D" parent="dooar/Red door" unique_id=67842221]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7116402, 1.7579056, -5.7122827)
 mesh = SubResource("ArrayMesh_i2er0")
 
-[node name="Rectangle3121" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=232424268]
+[node name="Rectangle3121" type="MeshInstance3D" parent="dooar/Red door" unique_id=232424268]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.710868, -1.792451, -9.253368)
 mesh = SubResource("ArrayMesh_ahptx")
 
-[node name="Rectangle3122" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=609578319]
+[node name="Rectangle3122" type="MeshInstance3D" parent="dooar/Red door" unique_id=609578319]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7116396, -1.7869041, -9.253368)
 mesh = SubResource("ArrayMesh_ohhnc")
 
-[node name="handles001" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1184741272]
+[node name="handles001" type="MeshInstance3D" parent="dooar/Red door" unique_id=1184741272]
 transform = Transform3D(1, 0, -1.7484554e-07, 0, 1, 0, 1.7484554e-07, 0, 1, -0.72482896, 3.6690972, -1.824253)
 mesh = SubResource("ArrayMesh_o87k7")
 
-[node name="hinge001" type="MeshInstance3D" parent="uploads_files_2182808_RED+DOOR/Red door" unique_id=1982761559]
+[node name="hinge001" type="MeshInstance3D" parent="dooar/Red door" unique_id=1982761559]
 transform = Transform3D(1, -1.7484554e-07, 0, 1.7484554e-07, 1, 0, 0, 0, 1, -0.7870371, -4.5175385, -1.1739306)
 mesh = SubResource("ArrayMesh_di0ax")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="dooar" unique_id=1638559418]
+stream = ExtResource("13_n6ljl")
+pitch_scale = 1.48
 
 [node name="hanglight" type="Node3D" parent="." unique_id=545113397]
 unique_name_in_owner = true
@@ -2360,8 +2424,42 @@ metadata/extras = {
 "hops": {}
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=345729188]
+[node name="door" type="AnimationPlayer" parent="." unique_id=345729188]
 libraries/ = SubResource("AnimationLibrary_tclur")
+
+[node name="aniTimer" type="Timer" parent="." unique_id=1298779897]
+wait_time = 4.65
+one_shot = true
+
+[node name="ambient" type="AudioStreamPlayer3D" parent="." unique_id=2003460723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22436923, 2.0668452, -6.2580347)
+stream = ExtResource("17_tclur")
+volume_db = -35.506
+autoplay = true
+
+[node name="breatherand" type="Timer" parent="." unique_id=1551018117]
+wait_time = 0.8
+one_shot = true
+autostart = true
+
+[node name="breathe" type="AudioStreamPlayer3D" parent="breatherand" unique_id=944584340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8433591, 1.5517333, -9.197851)
+stream = ExtResource("18_8f5w8")
+volume_db = -22.278
+
+[node name="randfootstep" type="AudioStreamPlayer3D" parent="." unique_id=1278932937]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.733886, 0.20573238, -3.385415)
+stream = SubResource("AudioStreamRandomizer_kx7ob")
+volume_db = -13.165
+pitch_scale = 0.66
+
+[node name="lightTap" type="AudioStreamPlayer3D" parent="." unique_id=60940793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5538747, 2.7692516, -6.267389)
+stream = SubResource("AudioStreamMP3_0qbkv")
 
 [connection signal="timeout" from="lighting/mainlight/Timer" to="lighting/mainlight" method="_on_timer_timeout"]
 [connection signal="timeout" from="lighting/mainlight/onTimer" to="lighting/mainlight" method="_on_on_timer_timeout"]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="aniTimer" to="." method="_on_ani_timer_timeout"]
+[connection signal="timeout" from="breatherand" to="." method="_on_breatherand_timeout"]

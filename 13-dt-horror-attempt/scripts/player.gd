@@ -24,9 +24,9 @@ func _input(event):
 		rotate_y(-event.relative.x * mouse_sensitivity)
 		$head/Camera3D.rotate_x(-event.relative.y * mouse_sensitivity)
 		$head/Camera3D.rotation.x = clampf($head/Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
-	#if event.is_action_pressed("interact"):
+	# if event.is_action_pressed("interact"):
 	if interaction_ray.is_colliding():
-		print("hello")
+		# print("hello")
 		var hit_collider = interaction_ray.get_collider()
 		var object_root = hit_collider.get_parent()
 		if object_root.has_method("interact") and event.is_action_pressed("interact"):
@@ -48,12 +48,6 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Handle jump.
-	#if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		#velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("a", "d", "w", "s")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:

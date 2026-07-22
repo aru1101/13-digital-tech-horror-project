@@ -25,14 +25,14 @@ func _on_timer_timeout() -> void:
 	vary = randi_range(0, 4)
 	if vary <= 2:
 		var timertimerplswork = randf_range(0.025, 0.4)
-		print(timertimerplswork)
+		# print(timertimerplswork)
 		$onTimer.start(timertimerplswork)
-		print("short")
+		# print("short")
 	elif vary >= 3:
 		var timeplswork = randf_range(1.0, 1.2)
 		$onTimer.start(timeplswork)
-		print("long")
-		print(timeplswork)
+		# print("long")
+		# print(timeplswork)
 	# code so that it has a low chance for light to be off for a longer period of time
 
 func _on_on_timer_timeout() -> void:

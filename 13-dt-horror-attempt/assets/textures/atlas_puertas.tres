@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c5kf5lejb8f87"]
+
+[ext_resource type="Texture2D" uid="uid://dpes7ubuoo7xh" path="res://assets/models/DoriHome_3.png" id="1_ubdfr"]
+
+[resource]
+resource_name = "atlas_puertas"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_ubdfr")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0

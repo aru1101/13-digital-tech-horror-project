@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c2dy37yxci2u4" path="res://scripts/testtesttest.gd" id="1_0fn05"]
 [ext_resource type="Texture2D" uid="uid://bu7iwlhioptcp" path="res://assets/models/DoriHome_0.png" id="1_3ewhn"]
+[ext_resource type="Script" uid="uid://dw6idkgqmka81" path="res://scenes/house.gd" id="1_82h1m"]
 [ext_resource type="Texture2D" uid="uid://bybw3xv4bbq6f" path="res://assets/models/DoriHome_1.png" id="2_0fn05"]
 [ext_resource type="Texture2D" uid="uid://yw0wlr544ovd" path="res://assets/models/DoriHome_2.png" id="3_82h1m"]
 [ext_resource type="Texture2D" uid="uid://dpes7ubuoo7xh" path="res://assets/models/DoriHome_3.png" id="4_e5ov4"]
@@ -7269,6 +7270,7 @@ shadow_mesh = SubResource("ArrayMesh_eyat8")
 data = PackedVector3Array(0.0404, 0.16499999, 0, 0.0404, -0.03, 0, -0.1104, -0.03, 0, -0.1104, -0.03, 0, -0.1104, 0.16499999, 0, 0.0404, 0.16499999, 0)
 
 [node name="house" type="Node3D" unique_id=2093515504]
+script = ExtResource("1_82h1m")
 
 [node name="DoriHome" type="Node3D" parent="." unique_id=1856773702]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16400659, 0, -0.014177322)

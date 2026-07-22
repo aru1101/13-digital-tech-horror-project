@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://qxkdrrfy4vc8"]
+
+[ext_resource type="Texture2D" uid="uid://dtntybc32agic" path="res://assets/models/DoriHome_13.png" id="1_115fw"]
+
+[resource]
+resource_name = "concreto2"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_115fw")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0

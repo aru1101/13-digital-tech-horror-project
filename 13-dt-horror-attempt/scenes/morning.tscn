@@ -11,7 +11,7 @@ background_energy_multiplier = 0.0
 [node name="Node3D" type="Node3D" unique_id=1719314191]
 
 [node name="playerAdult" parent="." unique_id=1655996281 instance=ExtResource("2_exavd")]
-transform = Transform3D(0.0040666508, 0, -0.9999917, 0, 1, 0, 0.9999917, 0, 0.0040666508, -13.8998, 5.2942324, -0.73753124)
+transform = Transform3D(0.0040666508, 0, -0.9999917, 0, 1, 0, 0.9999917, 0, 0.0040666508, -13.8998, 3.8758326, -0.73753124)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=55760982]
 environment = SubResource("Environment_3x52r")
