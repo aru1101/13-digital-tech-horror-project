@@ -1,8 +1,10 @@
 extends Node3D
 
+@export var playerr: Node
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	# playerr.pause_screen.show()
 	
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
@@ -10,7 +12,7 @@ func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED 
 		
-		
+
 		
 		
 		

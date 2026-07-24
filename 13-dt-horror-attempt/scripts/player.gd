@@ -13,14 +13,28 @@ var is_interacting = false
 @export_group("headbob")
 @export var headbob_frequency := 2.9
 @export var headbob_ampltiude := 0.08
+@onready var pause_screen = $pauseLayer
+
 var headbob_time := 0.0
+
+var paused = false
 
 var footstep_can_play := true
 var footstep_landed
 
 
+
+func _ready() -> void:
+	unpause()
+
 func _input(event):
-	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+	if event.is_action_pressed("ui_cancel"):
+		paused = true
+		pause()
+	if event.is_action_pressed("click"):
+		paused = false
+		unpause()
+	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED and paused == false:
 		rotate_y(-event.relative.x * mouse_sensitivity)
 		$head/Camera3D.rotate_x(-event.relative.y * mouse_sensitivity)
 		$head/Camera3D.rotation.x = clampf($head/Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
@@ -48,6 +62,7 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
+	
 	var input_dir := Input.get_vector("a", "d", "w", "s")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
@@ -57,10 +72,12 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
-	move_and_slide()
+	if paused == false:
+		move_and_slide()
 	
 	headbob_time += delta * velocity.length() * float(is_on_floor())
-	%Camera3D.transform.origin = headbob(headbob_time)
+	if paused == false:
+		%Camera3D.transform.origin = headbob(headbob_time)
 	
 	if not footstep_landed and is_on_floor(): # Landed
 		%FootstepAudio3D.play()
@@ -69,6 +86,7 @@ func _physics_process(delta: float) -> void:
 
 @warning_ignore("shadowed_variable")
 func headbob(headbob_time):
+	
 	var headbob_position = Vector3.ZERO
 	headbob_position.y = sin(headbob_time * headbob_frequency) * headbob_ampltiude
 	headbob_position.x = sin(headbob_time * headbob_frequency / 2) * headbob_ampltiude
@@ -81,3 +99,11 @@ func headbob(headbob_time):
 		%FootstepAudio3D.play()
 	
 	return headbob_position
+
+
+
+func pause():
+	pause_screen.show()
+
+func unpause():
+	pause_screen.hide()

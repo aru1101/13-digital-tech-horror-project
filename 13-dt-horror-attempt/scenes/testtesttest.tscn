@@ -18,8 +18,9 @@ volumetric_fog_density = 0.008
 adjustment_enabled = true
 adjustment_brightness = 1.4
 
-[node name="Node3D" type="Node3D" unique_id=1927058289]
+[node name="Node3D" type="Node3D" unique_id=1927058289 node_paths=PackedStringArray("playerr")]
 script = ExtResource("1_lq38n")
+playerr = NodePath("playerChild")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2120635231]
 environment = SubResource("Environment_ywv5p")

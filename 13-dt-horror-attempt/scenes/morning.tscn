@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cxwok2seb3yiv"]
 
+[ext_resource type="Script" uid="uid://c2dy37yxci2u4" path="res://scripts/testtesttest.gd" id="1_y8scg"]
 [ext_resource type="PackedScene" uid="uid://c8qyfehb82f6f" path="res://scenes/player.tscn" id="2_exavd"]
 [ext_resource type="PackedScene" uid="uid://sulxk0el658i" path="res://scenes/house.tscn" id="2_y8scg"]
 [ext_resource type="LightmapGIData" uid="uid://b6ir2rga6il7d" path="res://scenes/morning.lmbake" id="3_5gpx1"]
@@ -8,7 +9,9 @@
 background_mode = 2
 background_energy_multiplier = 0.0
 
-[node name="Node3D" type="Node3D" unique_id=1719314191]
+[node name="Node3D" type="Node3D" unique_id=1719314191 node_paths=PackedStringArray("playerr")]
+script = ExtResource("1_y8scg")
+playerr = NodePath("playerAdult")
 
 [node name="playerAdult" parent="." unique_id=1655996281 instance=ExtResource("2_exavd")]
 transform = Transform3D(0.0040666508, 0, -0.9999917, 0, 1, 0, 0.9999917, 0, 0.0040666508, -13.8998, 3.8758326, -0.73753124)

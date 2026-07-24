@@ -68,6 +68,34 @@ stream = SubResource("AudioStreamRandomizer_3vyb7")
 volume_db = 0.784
 pitch_scale = 0.66
 
+[node name="pauseLayer" type="CanvasLayer" parent="." unique_id=1642027801]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="pauseLayer" unique_id=1134437820]
+modulate = Color(1, 1, 1, 0.54901963)
+
+[node name="ColorRect" type="ColorRect" parent="pauseLayer/CanvasModulate" unique_id=1799433198]
+offset_right = 1152.0
+offset_bottom = 647.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="pauseLayer" unique_id=2106348055]
+offset_left = 26.0
+offset_top = 399.0
+offset_right = 163.0
+offset_bottom = 453.0
+theme_override_font_sizes/font_size = 39
+text = "Paused"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="pauseLayer" unique_id=184156649]
+offset_left = 30.0
+offset_top = 473.0
+offset_right = 114.0
+offset_bottom = 504.0
+text = "Unpause"
+metadata/_edit_use_anchors_ = true
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=59838367]
 
 [node name="label" type="Label" parent="CanvasLayer" unique_id=370789667]
@@ -78,33 +106,9 @@ offset_bottom = 531.0
 text = "Press E to interact"
 horizontal_alignment = 1
 vertical_alignment = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=855103218]
 position = Vector2(578, 328.00003)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("7_fjrip")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="CanvasLayer" unique_id=1642027801]
-
-[node name="CanvasModulate" type="CanvasModulate" parent="CanvasLayer/CanvasLayer" unique_id=1134437820]
-modulate = Color(1, 1, 1, 0.20392157)
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer/CanvasLayer/CanvasModulate" unique_id=1799433198]
-offset_right = 1152.0
-offset_bottom = 647.0
-color = Color(0, 0, 0, 1)
-
-[node name="Label" type="Label" parent="CanvasLayer/CanvasLayer" unique_id=2106348055]
-offset_left = 26.0
-offset_top = 399.0
-offset_right = 163.0
-offset_bottom = 453.0
-theme_override_font_sizes/font_size = 39
-text = "Paused"
-
-[node name="Button" type="Button" parent="CanvasLayer/CanvasLayer" unique_id=184156649]
-offset_left = 30.0
-offset_top = 473.0
-offset_right = 114.0
-offset_bottom = 504.0
-text = "Exit game"
