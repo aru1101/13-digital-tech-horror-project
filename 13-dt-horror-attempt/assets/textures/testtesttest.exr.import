@@ -2,8 +2,8 @@
 
 importer="2d_array_texture"
 type="CompressedTexture2DArray"
-uid="uid://kkx5gqalu7si"
-path.bptc="res://.godot/imported/morning.exr-fa918ab0fdf01b92e8b0a3b1da9902dd.bptc.ctexarray"
+uid="uid://28yab00ismr6"
+path.bptc="res://.godot/imported/testtesttest.exr-b914162c21996e78ddf90e854ef19a2f.bptc.ctexarray"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://scenes/morning.exr"
-dest_files=["res://.godot/imported/morning.exr-fa918ab0fdf01b92e8b0a3b1da9902dd.bptc.ctexarray"]
+source_file="res://assets/textures/testtesttest.exr"
+dest_files=["res://.godot/imported/testtesttest.exr-b914162c21996e78ddf90e854ef19a2f.bptc.ctexarray"]
 
 [params]
 

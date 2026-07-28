@@ -5,21 +5,55 @@ const SPEED = 1.5
 const JUMP_VELOCITY = 4.5
 
 var mouse_sensitivity = 0.002
+var is_interacting = false
+
+@onready var interaction_ray = $head/Camera3D/InteractionRay
+@onready var interaction_label = $CanvasLayer/label
+
+@onready var pause_screen = $pauseLayer
 
 @export_group("headbob")
 @export var headbob_frequency := 4.0
 @export var headbob_ampltiude := 0.07
+
 var headbob_time := 0.0
+
+var paused = false
 
 var footstep_can_play := true
 var footstep_landed
 
 
+func _ready() -> void:
+	unpause()
+
 func _input(event):
+	if event.is_action_pressed("ui_cancel"):
+		paused = true
+		pause()
+	if event.is_action_pressed("click"):
+		paused = false
+		unpause()
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		rotate_y(-event.relative.x * mouse_sensitivity)
 		$head/Camera3D.rotate_x(-event.relative.y * mouse_sensitivity)
 		$head/Camera3D.rotation.x = clampf($head/Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
+	if interaction_ray.is_colliding():
+		# print("hello")
+		var hit_collider = interaction_ray.get_collider()
+		var object_root = hit_collider.get_parent()
+		if object_root.has_method("interact") and event.is_action_pressed("interact"):
+			object_root.interact()
+			print("interacted")
+		if object_root.has_method("interact"):
+			interaction_label.show()
+			is_interacting = true
+	else:
+		is_interacting = false
+
+func _process(_delta):
+	if is_interacting == false:
+		interaction_label.hide()
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -64,3 +98,9 @@ func headbob(headbob_time):
 		%FootstepAudio3D.play()
 	
 	return headbob_position
+
+func pause():
+	pause_screen.show()
+
+func unpause():
+	pause_screen.hide()

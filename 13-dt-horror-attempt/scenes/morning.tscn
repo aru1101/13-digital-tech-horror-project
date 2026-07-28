@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c2dy37yxci2u4" path="res://scripts/testtesttest.gd" id="1_y8scg"]
 [ext_resource type="PackedScene" uid="uid://c8qyfehb82f6f" path="res://scenes/player.tscn" id="2_exavd"]
 [ext_resource type="PackedScene" uid="uid://sulxk0el658i" path="res://scenes/house.tscn" id="2_y8scg"]
-[ext_resource type="LightmapGIData" uid="uid://b6ir2rga6il7d" path="res://scenes/morning.lmbake" id="3_5gpx1"]
+[ext_resource type="LightmapGIData" uid="uid://b6ir2rga6il7d" path="res://scenes/lightmap/morning.lmbake" id="3_5gpx1"]
 
 [sub_resource type="Environment" id="Environment_3x52r"]
 background_mode = 2

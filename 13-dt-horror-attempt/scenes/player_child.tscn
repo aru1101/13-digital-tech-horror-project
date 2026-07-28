@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://bdkw2our46235" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 09_AUDIOELK_NONE.wav" id="4_wwomx"]
 [ext_resource type="AudioStream" uid="uid://duscs2s05slls" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 12_AUDIOELK_NONE.wav" id="5_hv2b7"]
 [ext_resource type="AudioStream" uid="uid://dobbeuhd3tvyi" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 15_AUDIOELK_NONE.wav" id="6_lx25e"]
+[ext_resource type="Texture2D" uid="uid://dbsdj2moinva5" path="res://assets/images/Aarav.png" id="7_j8ufh"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u8vuu"]
 radius = 0.18310547
@@ -21,6 +22,9 @@ stream_1/stream = ExtResource("3_mj7et")
 stream_2/stream = ExtResource("4_wwomx")
 stream_3/stream = ExtResource("5_hv2b7")
 stream_4/stream = ExtResource("6_lx25e")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mj7et"]
+load_path = "res://.godot/imported/Aarav.png-0a3e38e2de6f31ef94d81ac2ea658dc3.ctex"
 
 [node name="playerChild" type="CharacterBody3D" unique_id=1655996281]
 script = ExtResource("1_mduvu")
@@ -65,3 +69,57 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4591723, 0)
 stream = SubResource("AudioStreamRandomizer_3vyb7")
 pitch_scale = 1.11
+
+[node name="pauseLayer" type="CanvasLayer" parent="." unique_id=1862002267]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="pauseLayer" unique_id=1647269568]
+modulate = Color(1, 1, 1, 0.54901963)
+
+[node name="ColorRect" type="ColorRect" parent="pauseLayer/CanvasModulate" unique_id=1290264329]
+offset_left = -78.999985
+offset_top = -54.999992
+offset_right = 1073.0
+offset_bottom = 592.0
+scale = Vector2(1.25, 1.25)
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="pauseLayer" unique_id=1491319713]
+offset_left = 26.0
+offset_top = 399.0
+offset_right = 163.0
+offset_bottom = 453.0
+theme_override_font_sizes/font_size = 39
+text = "Paused"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="pauseLayer" unique_id=1946762904]
+offset_left = 30.0
+offset_top = 473.0
+offset_right = 114.0
+offset_bottom = 504.0
+text = "Unpause"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="pauseLayer" unique_id=735189837]
+modulate = Color(0, 0, 0, 0.09019608)
+position = Vector2(118.5, 506.31253)
+scale = Vector2(38.53125, 26.39453)
+texture = SubResource("CompressedTexture2D_mj7et")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=542671859]
+
+[node name="label" type="Label" parent="CanvasLayer" unique_id=2014520430]
+offset_left = 3.0
+offset_top = 205.0
+offset_right = 1156.0
+offset_bottom = 531.0
+text = "Press E to interact"
+horizontal_alignment = 1
+vertical_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1739644639]
+position = Vector2(578, 328.00003)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("7_j8ufh")

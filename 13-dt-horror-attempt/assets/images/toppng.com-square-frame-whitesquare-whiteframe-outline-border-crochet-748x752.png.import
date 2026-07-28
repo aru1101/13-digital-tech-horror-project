@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clshu5flciuys"
-path="res://.godot/imported/toppng.com-square-frame-whitesquare-whiteframe-outline-border-crochet-748x752.png-d65108f21c5a23b7e4ec04c9d479bca6.ctex"
+path="res://.godot/imported/toppng.com-square-frame-whitesquare-whiteframe-outline-border-crochet-748x752.png-0b981ed883d12eae0bc4f768dc4204c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/toppng.com-square-frame-whitesquare-whiteframe-outline-border-crochet-748x752.png"
-dest_files=["res://.godot/imported/toppng.com-square-frame-whitesquare-whiteframe-outline-border-crochet-748x752.png-d65108f21c5a23b7e4ec04c9d479bca6.ctex"]
+source_file="res://assets/images/toppng.com-square-frame-whitesquare-whiteframe-outline-border-crochet-748x752.png"
+dest_files=["res://.godot/imported/toppng.com-square-frame-whitesquare-whiteframe-outline-border-crochet-748x752.png-0b981ed883d12eae0bc4f768dc4204c4.ctex"]
 
 [params]
 

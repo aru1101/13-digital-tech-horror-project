@@ -27,6 +27,9 @@ stream_2/stream = ExtResource("4_smehm")
 stream_3/stream = ExtResource("5_ur7pv")
 stream_4/stream = ExtResource("6_y4r1p")
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fjrip"]
+load_path = "res://.godot/imported/Aarav.png-0a3e38e2de6f31ef94d81ac2ea658dc3.ctex"
+
 [node name="playerAdult" type="CharacterBody3D" unique_id=1655996281]
 script = ExtResource("1_3vyb7")
 
@@ -74,8 +77,11 @@ pitch_scale = 0.66
 modulate = Color(1, 1, 1, 0.54901963)
 
 [node name="ColorRect" type="ColorRect" parent="pauseLayer/CanvasModulate" unique_id=1799433198]
-offset_right = 1152.0
-offset_bottom = 647.0
+offset_left = -78.999985
+offset_top = -54.999992
+offset_right = 1073.0
+offset_bottom = 592.0
+scale = Vector2(1.25, 1.25)
 color = Color(0, 0, 0, 1)
 metadata/_edit_use_anchors_ = true
 
@@ -95,6 +101,12 @@ offset_right = 114.0
 offset_bottom = 504.0
 text = "Unpause"
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="pauseLayer" unique_id=66315620]
+modulate = Color(0, 0, 0, 0.09019608)
+position = Vector2(118.5, 506.31253)
+scale = Vector2(38.53125, 26.39453)
+texture = SubResource("CompressedTexture2D_fjrip")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=59838367]
 

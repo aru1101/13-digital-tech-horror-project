@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d3kajko7k5vsk"]
 
 [ext_resource type="Script" uid="uid://c2dy37yxci2u4" path="res://scripts/testtesttest.gd" id="1_lq38n"]
-[ext_resource type="LightmapGIData" uid="uid://ko8bfn6xloou" path="res://scenes/testtesttest.lmbake" id="3_kp3yf"]
+[ext_resource type="LightmapGIData" uid="uid://ko8bfn6xloou" path="res://scenes/lightmap/testtesttest.lmbake" id="3_kp3yf"]
 [ext_resource type="PackedScene" uid="uid://sulxk0el658i" path="res://scenes/house.tscn" id="4_xlw0g"]
 [ext_resource type="PackedScene" uid="uid://b70u8cuouyaid" path="res://scenes/player_child.tscn" id="17_lq38n"]
 

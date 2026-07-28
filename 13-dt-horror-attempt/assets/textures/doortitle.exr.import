@@ -3,7 +3,7 @@
 importer="2d_array_texture"
 type="CompressedTexture2DArray"
 uid="uid://cufjvg4fe2fxe"
-path.bptc="res://.godot/imported/doortitle.exr-de460c42e2f3da4e28be316e479ca0c3.bptc.ctexarray"
+path.bptc="res://.godot/imported/doortitle.exr-fea78dca9f22032b1122782b684b6e3e.bptc.ctexarray"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://scenes/doortitle.exr"
-dest_files=["res://.godot/imported/doortitle.exr-de460c42e2f3da4e28be316e479ca0c3.bptc.ctexarray"]
+source_file="res://assets/textures/doortitle.exr"
+dest_files=["res://.godot/imported/doortitle.exr-fea78dca9f22032b1122782b684b6e3e.bptc.ctexarray"]
 
 [params]
 
