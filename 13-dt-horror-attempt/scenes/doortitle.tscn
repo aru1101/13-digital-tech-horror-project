@@ -2132,7 +2132,7 @@ sky_mode = 1
 
 [node name="SpotLight3D" type="SpotLight3D" parent="lighting" unique_id=1834321471]
 transform = Transform3D(0.004384251, 0.99990267, -0.013248523, -0.0070713274, 0.01327932, 0.9998868, 0.9999654, -0.00429007, 0.007128858, 1.6807549, 2.6383064, -6.275917)
-light_color = Color(0.9999803, 0.2465711, 0.17529121, 1)
+light_color = Color(0.79321516, 0.045551695, 1.2513996e-06, 1)
 light_energy = 0.248
 shadow_enabled = true
 
@@ -2170,7 +2170,7 @@ distance_fade_length = 4.0
 
 [node name="SpotLight3D3" type="SpotLight3D" parent="lighting" unique_id=1936530099]
 transform = Transform3D(-4.235212e-08, -0.24743873, 0.96890354, -1.081589e-08, 0.96890354, 0.24743873, -1, 8.881784e-16, -4.371139e-08, 3.3991451, 1.1604674, -6.2522)
-light_color = Color(0.64082646, 0.028496413, 9.1448425e-07, 1)
+light_color = Color(0.5403093, 0.018983165, 4.813075e-08, 1)
 light_energy = 0.885
 shadow_enabled = true
 shadow_bias = 0.01

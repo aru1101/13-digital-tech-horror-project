@@ -14,6 +14,17 @@ height = 1.4974365
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_3vyb7"]
 
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_j8ufh"]
+auto_exposure_scale = 0.15
+auto_exposure_speed = 1.0
+dof_blur_far_enabled = true
+dof_blur_far_distance = 0.16
+dof_blur_far_transition = -1.0
+dof_blur_near_distance = 8192.0
+dof_blur_amount = 0.33
+auto_exposure_min_sensitivity = 2000.0
+auto_exposure_max_sensitivity = 10000.0
+
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_3vyb7"]
 random_pitch = 1.0717734
 streams_count = 5
@@ -45,6 +56,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4748838, 0)
 [node name="Camera3D" type="Camera3D" parent="head" unique_id=1474960970]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.9983748, 0.056989037, 0, -0.056989037, 0.9983748, 0, 0.3779359, -0.038609505)
+attributes = SubResource("CameraAttributesPractical_j8ufh")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="head/Camera3D" unique_id=1333003423]
 light_energy = 0.85
@@ -54,7 +66,8 @@ spot_angle = 35.0
 spot_angle_attenuation = 3.7321332
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="head/Camera3D" unique_id=1141910369]
-light_energy = 0.15
+light_energy = 0.125
+shadow_enabled = true
 spot_range = 2.5
 spot_angle = 60.0
 
