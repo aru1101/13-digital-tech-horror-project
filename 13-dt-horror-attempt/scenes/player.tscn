@@ -20,9 +20,9 @@ auto_exposure_scale = 0.15
 auto_exposure_speed = 1.0
 dof_blur_far_enabled = true
 dof_blur_far_distance = 0.8
-dof_blur_far_transition = 0.15
+dof_blur_far_transition = 0.2
 dof_blur_near_distance = 8192.0
-dof_blur_amount = 0.32
+dof_blur_amount = 0.15
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_3vyb7"]
 random_pitch = 1.0717734

@@ -44,7 +44,7 @@ func _input(event):
 		var object_root = hit_collider.get_parent()
 		if object_root.has_method("interact") and event.is_action_pressed("interact"):
 			object_root.interact()
-			print("interacted")
+			# print("interacted")
 		if object_root.has_method("interact"):
 			interaction_label.show()
 			is_interacting = true

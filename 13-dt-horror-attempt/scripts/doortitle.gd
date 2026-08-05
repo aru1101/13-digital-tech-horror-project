@@ -24,7 +24,7 @@ func _on_button_pressed() -> void:
 func _rand_timerB():
 	var timeB = randi_range(3, 8)
 	$breatherand.start(timeB)
-	print(timeB)
+	# print(timeB)
 
 func _on_breatherand_timeout() -> void:
 	$breatherand/breathe.play()
