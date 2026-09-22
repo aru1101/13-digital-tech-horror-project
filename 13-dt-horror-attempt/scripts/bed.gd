@@ -1,9 +1,10 @@
 extends MeshInstance3D
 
+@export var scene = scene_file_path
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	print(owner.name)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -12,4 +13,5 @@ func _process(delta: float) -> void:
 
 func interact():
 	# print("ok")
-	get_tree().change_scene_to_file("res://scenes/testtesttest.tscn")
+	if owner.name == "morningHouse":
+		get_tree().change_scene_to_file("res://scenes/testtesttest.tscn")

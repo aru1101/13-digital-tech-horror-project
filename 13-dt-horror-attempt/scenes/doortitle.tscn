@@ -18,7 +18,7 @@
 [ext_resource type="AudioStream" uid="uid://chjl6kkfch4ly" path="res://assets/sounds/door/freesound_community-door-open-86191.mp3" id="13_n6ljl"]
 [ext_resource type="Texture2D" uid="uid://d0ug84767ak3k" path="res://assets/models/hanging_industrial_lamp_4k.blend/textures/hanging_industrial_lamp_glass_nor_gl_4k.png" id="13_pjn8d"]
 [ext_resource type="AudioStream" uid="uid://cob65053u1sl6" path="res://assets/sounds/ambient/title.mp3" id="17_tclur"]
-[ext_resource type="AudioStream" uid="uid://bbbmwekth835o" path="res://assets/sounds/sudden/freesound_community-breathe-95275.mp3" id="18_8f5w8"]
+[ext_resource type="AudioStream" uid="uid://bbbmwekth835o" path="res://assets/sounds/sudden/breathe.mp3" id="18_8f5w8"]
 [ext_resource type="AudioStream" uid="uid://dadooaccnwkbu" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 05_AUDIOELK_NONE.wav" id="19_0qbkv"]
 [ext_resource type="AudioStream" uid="uid://d0sjghok7nwtg" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 06_AUDIOELK_NONE.wav" id="20_n6ljl"]
 [ext_resource type="AudioStream" uid="uid://bdkw2our46235" path="res://assets/sounds/footsteps/AE_FreeFS_U1_07182024/AE_FreeFS_U1_07182024/FEETHmn-STAIR CARPET_Footsteps With Tennis Shoes On Carpeted Stairs 09_AUDIOELK_NONE.wav" id="21_c6h13"]

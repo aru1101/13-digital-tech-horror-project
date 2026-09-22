@@ -9,7 +9,7 @@
 background_mode = 2
 background_energy_multiplier = 0.0
 
-[node name="Node3D" type="Node3D" unique_id=1719314191 node_paths=PackedStringArray("playerr")]
+[node name="lightScene" type="Node3D" unique_id=1719314191 node_paths=PackedStringArray("playerr")]
 script = ExtResource("1_y8scg")
 playerr = NodePath("playerAdult")
 
@@ -19,12 +19,83 @@ transform = Transform3D(0.0040666508, 0, -0.9999917, 0, 1, 0, 0.9999917, 0, 0.00
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=55760982]
 environment = SubResource("Environment_3x52r")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1178696543]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.552653, 3.591745, -2.0733418)
-shadow_enabled = true
-
-[node name="Node3D" parent="." unique_id=2093515504 instance=ExtResource("2_y8scg")]
+[node name="morningHouse" parent="." unique_id=2093515504 instance=ExtResource("2_y8scg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6899486, 2.1707563, 4.5699763)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=8129818]
 light_data = ExtResource("3_5gpx1")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1004713069]
+transform = Transform3D(0.0040666508, 0, -0.9999917, 0, 1, 0, 0.9999917, 0, 0.0040666508, -13.8998, 3.8758326, -0.73753124)
+
+[node name="bedroom" type="Node3D" parent="Node3D" unique_id=1463284614]
+
+[node name="mainLight" type="OmniLight3D" parent="Node3D/bedroom" unique_id=1277606552]
+transform = Transform3D(1.0000001, 0, 4.656613e-10, 0, 1, 0, -4.656613e-10, 0, 1.0000001, 5.265317, 0.88864803, -9.322048)
+light_energy = 0.1
+shadow_enabled = true
+distance_fade_length = 8.8
+
+[node name="negativeLight" type="SpotLight3D" parent="Node3D/bedroom" unique_id=2102240801]
+transform = Transform3D(0.9999866, -0.0039960626, 0.0033122113, 0.0039960626, 0.18551226, -0.9826338, 0.0033122106, 0.98263395, 0.18552575, 5.093032, 0, -9.566513)
+light_energy = 0.02
+light_negative = true
+spot_attenuation = 0.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D/bedroom" unique_id=1507703887]
+transform = Transform3D(1.0000001, 0, 4.656613e-10, 0, 1, 0, -4.656613e-10, 0, 1.0000001, 5.468088, -0.13854504, -12.086089)
+light_energy = 0.05
+omni_attenuation = 0.0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Node3D/bedroom" unique_id=467229079]
+transform = Transform3D(1.0000001, 0, 4.656613e-10, 0, 1, 0, -4.656613e-10, 0, 1.0000001, 5.6860147, -0.13854504, -6.105631)
+light_energy = 0.05
+light_indirect_energy = 0.0
+
+[node name="livingRoom" type="Node3D" parent="Node3D" unique_id=475334685]
+
+[node name="livingRoomLightTest" type="OmniLight3D" parent="Node3D/livingRoom" unique_id=1178696543]
+transform = Transform3D(0.004066651, 0, 0.99999183, 0, 1, 0, -0.99999183, 0, 0.004066651, -1.3221879, -0.28408766, -3.3525515)
+shadow_enabled = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D/livingRoom" unique_id=1523262788]
+transform = Transform3D(1.0000001, 0, 4.656613e-10, 0, 1, 0, -4.656613e-10, 0, 1.0000001, -3.2875993, 0.2765746, -2.9374905)
+light_energy = 0.67
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Node3D/livingRoom" unique_id=1629216626]
+transform = Transform3D(0.9999858, -0.004028815, 0.0035131667, 0.0040288125, 0.13609594, -0.9906875, 0.0035131685, 0.99068755, 0.13611025, -3.3273494, 1.0094872, -2.9887695)
+visible = false
+light_energy = 0.93
+light_negative = true
+spot_range = 2.42
+spot_attenuation = 0.0
+spot_angle = 63.12
+
+[node name="Node3D" type="Node3D" parent="Node3D/livingRoom" unique_id=1509743807]
+
+[node name="lamp" type="SpotLight3D" parent="Node3D/livingRoom/Node3D" unique_id=1523875964]
+transform = Transform3D(0.999984, 0.004065035, 0.003951935, -0.0040650326, 0.028200775, 0.99959403, 0.0039519374, -0.9995941, 0.028216852, -7.59625, 1.0046406, -6.1217375)
+spot_range = 2.315
+spot_angle = 15.55
+
+[node name="lamp3" type="SpotLight3D" parent="Node3D/livingRoom/Node3D" unique_id=1014842041]
+transform = Transform3D(0.7079044, 0.023901846, 0.70590395, -0.70630306, 0.020044401, 0.7076258, 0.0027641421, -0.99951345, 0.031071467, -6.4070177, 1.0046406, -6.1169024)
+spot_range = 1.712
+spot_angle = 17.406496
+
+[node name="lamp2" type="SpotLight3D" parent="Node3D/livingRoom/Node3D" unique_id=1499372466]
+transform = Transform3D(0.99998206, -0.004050207, 0.004431931, 0.004050205, -0.089833066, -0.9959486, 0.004431932, 0.9959488, -0.08981505, -7.577576, -1.7780287, -6.148778)
+spot_angle = 8.1
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D/livingRoom/Node3D" unique_id=1046667259]
+transform = Transform3D(1.0000001, 0, 4.656613e-10, 0, 1, 0, -4.656613e-10, 0, 1.0000001, -7.5054364, 0.3065405, -6.1637397)
+light_energy = 0.035
+light_size = 1.0
+omni_attenuation = 0.0
+
+[node name="kitchen" type="Node3D" parent="Node3D" unique_id=1112614858]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D/kitchen" unique_id=1359977263]
+transform = Transform3D(1.0000001, 0, 4.656613e-10, 0, 1, 0, -4.656613e-10, 0, 1.0000001, -9.71818, 0.10472965, -3.4687881)
+light_energy = 0.15
+light_size = 1.0

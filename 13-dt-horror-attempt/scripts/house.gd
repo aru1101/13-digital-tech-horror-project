@@ -1,7 +1,8 @@
 extends Node3D
 
 func _ready() -> void:
-	dim_all_lights(self)
+	if owner.name != "lightScene":
+		dim_all_lights(self)
 
 func dim_all_lights(current_node: Node) -> void:
 	if current_node is MeshInstance3D:

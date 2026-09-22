@@ -6,14 +6,16 @@ func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	# playerr.pause_screen.show()
 	
+
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED 
 		
+	if event.is_action_pressed("dialogue"):
+		dialogue()
 
-		
-		
-		
-		
+func dialogue():
+	DialogueManager.show_dialogue_balloon(load("res://assets/dialogues/testdia.dialogue"))
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
